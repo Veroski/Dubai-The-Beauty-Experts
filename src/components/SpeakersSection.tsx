@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import { SectionCTA } from "./SectionCTA";
 
 interface Speaker {
     id: string;
@@ -115,6 +116,8 @@ export function SpeakersSection() {
                         ))}
                     </div>
                 </div>
+
+                <SectionCTA />
             </div>
 
             {/* Global styles for marquee */}

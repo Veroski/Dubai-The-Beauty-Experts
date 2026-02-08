@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import SimpleParallax from "simple-parallax-js";
+
 import HeroCTA from "./HeroCTA";
 
 export default function Hero() {
@@ -71,7 +72,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <main className="relative min-h-screen w-full bg-[#E6D3A3]">
+        <main id="hero" className="relative min-h-screen w-full bg-[#E6D3A3]">
             <section className="relative h-screen w-full flex items-center justify-center overflow-hidden [perspective:1200px] z-10">
                 {/* Fondo cielo */}
                 <div className="absolute inset-0 bg-sky-gradient z-0 opacity-80" />
@@ -118,11 +119,11 @@ export default function Hero() {
                 />
 
                 {/* Contenedor central 3D */}
-                <div className="relative z-40 text-center px-4 max-w-5xl mx-auto [transform-style:preserve-3d]">
+                <div className="relative z-40 text-center px-4 pt-20 md:pt-0 max-w-5xl mx-auto [transform-style:preserve-3d]">
                     {/* TEXTO (más lejos) */}
                     <div style={text3DStyle} className="[transform-style:preserve-3d]">
                         <h1 className="text-3xl md:text-5xl font-black tracking-tighter mb-6 text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.3)] leading-tight uppercase">
-                            International Micropigmentation Congress — Dubai
+                            International Micropigmentation Congress Dubai 2026
                         </h1>
 
                         <p className="text-sm md:text-lg text-white uppercase tracking-[0.4em] font-medium drop-shadow-md max-w-3xl mx-auto">
@@ -140,9 +141,6 @@ export default function Hero() {
 
                 {/* Indicador scroll */}
                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-4 pointer-events-none">
-                    <span className="text-[10px] uppercase tracking-[0.4em] text-white/60 font-medium">
-                        Explore
-                    </span>
                     <div className="w-[1px] h-16 bg-gradient-to-b from-white via-white/20 to-transparent animate-pulse" />
                 </div>
             </section>

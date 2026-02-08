@@ -9,6 +9,8 @@ import React from "react";
  * Imagen /desert-dune.webp con tinte degradado coherente
  */
 
+import { SectionCTA } from "./SectionCTA";
+
 export function StrategicGrowthSection() {
   return (
     <section className="relative w-full overflow-hidden pt-16 pb-32 md:pt-24 md:pb-44">
@@ -87,6 +89,7 @@ export function StrategicGrowthSection() {
             className="md:translate-y-20"
           />
         </div>
+        <SectionCTA />
       </div>
     </section>
   );
