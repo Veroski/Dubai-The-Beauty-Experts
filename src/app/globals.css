@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F8F4EE;
+  --foreground: #1F2E3A;
+  
+  --warm-white: #F9F7F2;
+  --soft-ivory: #F2EBE1;
+  --desert-sand: #E2D1B9;
+  --golden-beige: #D4AF37;
+  --deep-gold: #B8860B;
+  --clear-sky-blue: #7FB3D5; /* Saturated, warmer blue */
+  --soft-blue-top: #A9CCE3;
+  --deep-petrol: #154360; /* Warmer deep blue */
+
+  --primary-gold-gradient: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #B8860B 100%);
+  --hero-sky-gradient: linear-gradient(180deg, #5499C7 0%, #A9CCE3 50%, #F2EBE1 100%);
+  --desert-fade-gradient: linear-gradient(180deg, rgba(84,153,199,0.2) 0%, rgba(212,175,55,0.1) 100%);
+  --luxury-overlay-gradient: linear-gradient(180deg, rgba(21,67,96,0.5) 0%, rgba(21,67,96,0.2) 40%, rgba(21,67,96,0) 100%);
+  --subtle-gold-light-gradient: linear-gradient(180deg, rgba(255,215,0,0.3) 0%, rgba(212,175,55,0.15) 60%, rgba(212,175,55,0) 100%);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: inherit;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
