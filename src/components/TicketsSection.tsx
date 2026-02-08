@@ -133,12 +133,12 @@ export function TicketsSection({
               </div>
 
               {/* WHATSAPP SUPPORT */}
-              <div className="mt-6 md:mt-8 text-center pb-4 lg:pb-0">
+              <div className="mt-8 md:mt-10 text-center pb-6 lg:pb-0">
                 <a
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] md:text-xs font-bold text-[#B48B2A] hover:text-[#1A150E] transition-colors flex items-center justify-center gap-2 group"
+                  className="relative z-50 inline-flex items-center justify-center gap-2 py-4 px-6 text-[11px] md:text-xs font-bold text-[#B48B2A] hover:text-[#1A150E] transition-colors group"
                 >
                   Need help? Chat with Dubai Support <Zap className="w-3.5 h-3.5 md:w-4 md:h-4 group-hover:scale-110 transition-transform" fill="#B48B2A" />
                 </a>
