@@ -35,10 +35,10 @@ export function TicketsSection({
         <div className="grid lg:grid-cols-12 gap-12 items-start">
 
           {/* VALUE PROPOSITION */}
-          <div className="lg:col-span-6 space-y-8">
-            <div className="space-y-6">
-              <h3 className="text-xs font-black uppercase tracking-widest text-[#B48B2A]">All-Inclusive Experience</h3>
-              <div className="grid gap-4">
+          <div className="lg:col-span-6 space-y-6 md:space-y-8 order-2 lg:order-1">
+            <div className="space-y-4 md:space-y-6">
+              <h3 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-[#B48B2A]">All-Inclusive Experience</h3>
+              <div className="grid gap-3 md:gap-4">
                 <Benefit title="Dual Certification" detail="Attendance & Championship official credentials." />
                 <Benefit title="5-Star Catering" detail="Gourmet lunches, coffee breaks & Gala Dinner." />
                 <Benefit title="VIP Master Kit" detail="Welcome Bag + THE BEAUTY EXPERTS 2026 Magazine." />
@@ -46,67 +46,67 @@ export function TicketsSection({
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-4 p-5 rounded-2xl bg-white border border-[#C9A24A]/10 shadow-sm">
-              <Calendar className="text-[#C9A24A]" size={20} />
+            <div className="inline-flex items-center gap-3 md:gap-4 p-4 md:p-5 rounded-xl md:rounded-2xl bg-white border border-[#C9A24A]/10 shadow-sm w-full md:w-auto">
+              <Calendar className="text-[#C9A24A] shrink-0" size={18} />
               <div>
-                <p className="text-xs font-black uppercase tracking-tighter">October 15, 16, 17 • 2026</p>
-                <p className="text-[10px] text-gray-400 font-serif italic">The Beauty Experts Summit • Dubai</p>
+                <p className="text-[10px] md:text-xs font-black uppercase tracking-tighter">October 15, 16, 17 • 2026</p>
+                <p className="text-[9px] md:text-[10px] text-gray-400 font-serif italic">The Beauty Experts Summit • Dubai</p>
               </div>
             </div>
           </div>
 
           {/* CONVERSION ENGINE */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 order-1 lg:order-2">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-[#C9A24A] rounded-[44px] blur-xl opacity-10 group-hover:opacity-15 transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-[#C9A24A] rounded-[32px] md:rounded-[44px] blur-xl opacity-10 group-hover:opacity-15 transition duration-1000"></div>
 
-              <div className="relative bg-white border-2 border-[#C9A24A]/20 rounded-[40px] p-8 md:p-12 shadow-[0_40px_80px_-30px_rgba(201,162,74,0.15)]">
+              <div className="relative bg-white border-2 border-[#C9A24A]/20 rounded-[28px] md:rounded-[40px] p-6 md:p-12 shadow-[0_40px_80px_-30px_rgba(201,162,74,0.15)]">
 
                 {/* Price & Scarcity */}
-                <div className="flex justify-between items-center mb-10">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 md:mb-10 text-left">
                   <div>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-5xl font-black tracking-tighter text-[#1A150E]">1.000€</span>
-                      <span className="text-gray-400 line-through text-lg">1.500€</span>
+                      <span className="text-4xl md:text-5xl font-black tracking-tighter text-[#1A150E]">1.000€</span>
+                      <span className="text-gray-400 line-through text-base md:text-lg">1.500€</span>
                     </div>
-                    <p className="text-xs font-bold text-[#C9A24A] uppercase tracking-widest mt-1">+ VAT | Early Bird Price</p>
+                    <p className="text-[10px] md:text-xs font-bold text-[#C9A24A] uppercase tracking-widest mt-1">+ VAT | Early Bird Price</p>
                   </div>
-                  <div className="text-right">
-                    <span className="text-red-600 text-[10px] font-black uppercase bg-red-50 px-3 py-1 rounded-full animate-pulse">
+                  <div className="w-full sm:w-auto">
+                    <span className="inline-block text-red-600 text-[9px] md:text-[10px] font-black uppercase bg-red-50 px-3 py-1 rounded-full animate-pulse whitespace-nowrap">
                       Selling out fast
                     </span>
                   </div>
                 </div>
 
                 {/* MAIN STRIPE BUTTON */}
-                <div className="space-y-8">
+                <div className="space-y-6 md:space-y-8">
                   <div className="relative">
                     <a
                       href={stripeCheckoutUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative flex flex-col items-center justify-center w-full py-7 px-10 bg-[#1A150E] text-white rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:bg-black shadow-[0_20px_50px_-10px_rgba(0,0,0,0.4)] overflow-hidden"
+                      className="group relative flex flex-col items-center justify-center w-full py-5 md:py-7 px-6 md:px-10 bg-[#1A150E] text-white rounded-xl md:rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:bg-black shadow-[0_20px_50px_-10px_rgba(0,0,0,0.4)] overflow-hidden"
                     >
                       <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-[45deg] -translate-x-full group-hover:animate-shine-fast" />
 
-                      <span className="text-lg font-black uppercase tracking-[0.2em] flex items-center gap-3">
-                        Pay with Stripe <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
+                      <span className="text-base md:text-lg font-black uppercase tracking-[0.15em] md:tracking-[0.2em] flex items-center gap-2 md:gap-3">
+                        Pay with Stripe <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
                       </span>
-                      <span className="text-[9px] text-[#C9A24A] font-bold mt-1 tracking-[0.1em] opacity-90 uppercase">
+                      <span className="text-[8px] md:text-[9px] text-[#C9A24A] font-bold mt-1 tracking-[0.1em] opacity-90 uppercase">
                         Secure Checkout
                       </span>
                     </a>
 
-                    <div className="flex justify-center items-center gap-4 mt-5 opacity-40 grayscale hover:grayscale-0 transition-all cursor-default">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" className="h-4" alt="Stripe" />
-                      <div className="h-3 w-px bg-gray-300" />
-                      <CreditCard size={14} />
+                    <div className="flex justify-center items-center gap-3 md:gap-4 mt-4 md:mt-5 opacity-40 grayscale hover:grayscale-0 transition-all cursor-default scale-90 md:scale-100">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" className="h-3 md:h-4" alt="Stripe" />
+                      <div className="h-2 md:h-3 w-px bg-gray-300" />
+                      <CreditCard className="w-3.5 h-3.5 md:w-4 md:h-4" />
                     </div>
                   </div>
 
                   {/* PAYMENT PLANS -> WHATSAPP */}
-                  <div className="space-y-3">
-                    <p className="text-center text-[9px] font-black uppercase tracking-[0.2em] text-gray-400">Or use a Flexible Payment Plan</p>
+                  <div className="space-y-2 md:space-y-3">
+                    <p className="text-center text-[8px] md:text-[9px] font-black uppercase tracking-[0.2em] text-gray-400">Or use a Flexible Payment Plan</p>
 
                     <InstallmentOption
                       plan="2 Payments"
@@ -115,7 +115,7 @@ export function TicketsSection({
                     />
                     <InstallmentOption
                       plan="3 Payments"
-                      detail="300€ Reserve • 350€ (March) • 350€ (July)"
+                      detail="300€ Reserve • 350€ (Mar) • 350€ (Jul)"
                       onClick={() => window.open(whatsappUrl, '_blank')}
                     />
                     <InstallmentOption
@@ -126,21 +126,21 @@ export function TicketsSection({
                   </div>
                 </div>
 
-                <div className="mt-10 pt-6 border-t border-gray-100 flex items-center justify-center gap-2 text-[9px] font-bold text-gray-400 uppercase tracking-widest">
-                  <ShieldCheck size={14} className="text-[#C9A24A]" />
+                <div className="mt-8 md:mt-10 pt-5 md:pt-6 border-t border-gray-100 flex items-center justify-center gap-2 text-[8px] md:text-[9px] font-bold text-gray-400 uppercase tracking-widest text-center">
+                  <ShieldCheck className="text-[#C9A24A] shrink-0 w-3.5 h-3.5 md:w-4 md:h-4" />
                   Authorized Stripe Partner • Secure Transaction
                 </div>
               </div>
 
               {/* WHATSAPP SUPPORT */}
-              <div className="mt-8 text-center">
+              <div className="mt-6 md:mt-8 text-center pb-4 lg:pb-0">
                 <a
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-bold text-[#B48B2A] hover:text-[#1A150E] transition-colors flex items-center justify-center gap-2 group"
+                  className="text-[10px] md:text-xs font-bold text-[#B48B2A] hover:text-[#1A150E] transition-colors flex items-center justify-center gap-2 group"
                 >
-                  Need help? Chat with Dubai Support <Zap size={14} fill="#B48B2A" className="group-hover:scale-110 transition-transform" />
+                  Need help? Chat with Dubai Support <Zap className="w-3.5 h-3.5 md:w-4 md:h-4 group-hover:scale-110 transition-transform" fill="#B48B2A" />
                 </a>
               </div>
             </div>

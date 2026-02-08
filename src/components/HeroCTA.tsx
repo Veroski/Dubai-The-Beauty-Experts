@@ -31,7 +31,7 @@ export default function HeroCTA({
 
             {/* Placa glass de fondo */}
             <div
-                className="absolute -inset-x-12 -inset-y-10 md:-inset-x-20 md:-inset-y-12 rounded-[40px] pointer-events-none overflow-hidden"
+                className="hidden md:block absolute -inset-x-12 -inset-y-10 md:-inset-x-20 md:-inset-y-12 rounded-[40px] pointer-events-none overflow-hidden"
                 style={{
                     background:
                         "radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%)",

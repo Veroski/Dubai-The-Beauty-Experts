@@ -29,8 +29,17 @@ export default function Hero() {
         };
     }, []);
 
+    const [isMobile, setIsMobile] = useState(true);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     // TEXTO: más movimiento (queda “más lejos”)
-    const text3DStyle: React.CSSProperties = {
+    const text3DStyle: React.CSSProperties = isMobile ? {} : {
         transform: `
       translate3d(${mousePos.x * 25}px, ${mousePos.y * 25 + scrollY * -0.4}px, 90px)
       rotateX(${mousePos.y * -5}deg)
@@ -41,7 +50,7 @@ export default function Hero() {
     };
 
     // CTA: más cerca (más Z), pero se mueve MENOS con el ratón
-    const cta3DStyle: React.CSSProperties = {
+    const cta3DStyle: React.CSSProperties = isMobile ? {} : {
         transform: `
       translate3d(${mousePos.x * 10}px, ${mousePos.y * 10 + scrollY * -0.18}px, 180px)
       rotateX(${mousePos.y * -1.5}deg)
@@ -77,9 +86,9 @@ export default function Hero() {
                 {/* Fondo cielo */}
                 <div className="absolute inset-0 bg-sky-gradient z-0 opacity-80" />
 
-                {/* Imagen con parallax */}
+                {/* Parallax Image (Desktop only) */}
                 <div
-                    className="absolute inset-0 z-10 pointer-events-none will-change-transform"
+                    className="hidden md:block absolute inset-0 z-10 pointer-events-none will-change-transform"
                     style={{
                         transform: `translate3d(${mousePos.x * 8}px, ${mousePos.y * 8}px, 0)`,
                     }}
@@ -109,6 +118,13 @@ export default function Hero() {
                     </SimpleParallax>
                 </div>
 
+                {/* Plain Image (Mobile only) */}
+                <div className="md:hidden absolute inset-0 z-10">
+                    <img src="/dubai.jpg" alt="Dubai Skyline" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 z-20 bg-black/20" />
+                    <div className="absolute inset-x-0 bottom-0 z-30 h-[40%] bg-gradient-to-t from-[#E6D3A3] via-[#E6D3A3]/60 to-transparent" />
+                </div>
+
                 {/* Spotlight */}
                 <div
                     className="absolute inset-0 z-30 pointer-events-none"
@@ -119,22 +135,22 @@ export default function Hero() {
                 />
 
                 {/* Contenedor central 3D */}
-                <div className="relative z-40 text-center px-4 pt-20 md:pt-0 max-w-5xl mx-auto [transform-style:preserve-3d]">
+                <div className="relative z-40 text-center px-6 pt-24 md:pt-0 max-w-5xl mx-auto [transform-style:preserve-3d]">
                     {/* TEXTO (más lejos) */}
                     <div style={text3DStyle} className="[transform-style:preserve-3d]">
-                        <h1 className="text-3xl md:text-5xl font-black tracking-tighter mb-6 text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.3)] leading-tight uppercase">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter mb-8 text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.4)] leading-[1.1] uppercase">
                             International Micropigmentation Congress Dubai 2026
                         </h1>
 
-                        <p className="text-sm md:text-lg text-white uppercase tracking-[0.4em] font-medium drop-shadow-md max-w-3xl mx-auto">
-                            <span className="bg-[#D9B35F]/35 px-4 py-1 rounded-sm leading-relaxed [box-decoration-break:clone] [-webkit-box-decoration-break:clone]">
+                        <p className="text-sm md:text-lg text-white uppercase tracking-[0.3em] md:tracking-[0.4em] font-medium drop-shadow-md max-w-3xl mx-auto">
+                            <span className="md:bg-[#D9B35F]/35 md:px-4 md:py-1 rounded-sm leading-relaxed [box-decoration-break:clone] [-webkit-box-decoration-break:clone]">
                                 Training, technique, and professional growth with international specialists.
                             </span>
                         </p>
                     </div>
 
                     {/* CTA (más cerca, menos movimiento) */}
-                    <div className="mt-10 md:mt-12 flex justify-center" style={cta3DStyle}>
+                    <div className="mt-12 md:mt-12 flex justify-center" style={cta3DStyle}>
                         <HeroCTA />
                     </div>
                 </div>
