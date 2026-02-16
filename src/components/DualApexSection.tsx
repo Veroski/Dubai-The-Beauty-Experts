@@ -32,7 +32,7 @@ export function DualApexSection() {
                     </span>
 
                     <h2 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-[#243441] leading-[0.9] uppercase">
-                        The <span className="italic font-serif text-[#C9A24A]">Apex</span> Mind.
+                        The <span className="italic font-serif text-[#C9A24A]">High-Performance</span> Mind.
                     </h2>
 
                     <p className="mt-8 text-xl md:text-2xl text-[#5C4A2D] max-w-2xl mx-auto font-medium leading-relaxed">
