@@ -55,51 +55,33 @@ export function SpeakersSection() {
                 <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,rgba(255,255,255,0.8)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.8)_1px,transparent_1px)] bg-[size:90px_90px]" />
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-4 space-y-16">
-                {/* Context header (English) */}
-                <header className="max-w-3xl mx-auto text-center">
-                    <div className="text-[11px] tracking-[0.5em] uppercase font-semibold text-white/60">
-                        THE LINEUP
+            <div className="relative max-w-7xl mx-auto px-4 space-y-24">
+                {/* 1. PRIME SPEAKERS - ABSOLUTE PRIORITY */}
+                <div className="pt-8">
+                    <BlockHeader
+                        title={<>PRIME <span className="font-serif italic" style={{ color: GOLD }}>SPEAKERS</span></>}
+                        kicker="EXCLUSIVE"
+                        desc="Featured artists selected for their impact, experience, and stage presence."
+                    />
+                    <div className="mt-12">
+                        <SingleMarquee
+                            items={prime}
+                            speedPxPerSec={60}
+                            card="large"
+                        />
                     </div>
+                </div>
 
-                    <h2 className="mt-4 text-5xl md:text-6xl font-light tracking-tight">
-                        Meet the <span className="font-serif italic" style={{ color: GOLD }}>Artists</span>
-                    </h2>
-
-                    <p className="mt-5 text-base md:text-lg text-white/70 leading-relaxed">
-                        Dubai edition. A curated roster of international speakers, non-stop live demos, and specialist support — built for mastery, visibility, and growth.
-                    </p>
-
-                    <div className="mt-8 flex flex-wrap justify-center gap-3">
-                        <Pill>International roster</Pill>
-                        <Pill>Live demos</Pill>
-                        <Pill>Judging panel</Pill>
-                        <Pill>Workshops</Pill>
-                    </div>
-                </header>
-
-                {/* NON STOP FIRST (double row) */}
+                {/* 2. NON STOP DEMO SECOND - Live demonstrations */}
                 <BlockHeader
                     title={<>NON STOP <span className="font-serif italic" style={{ color: GOLD }}>DEMO</span></>}
                     kicker="JUDGE & LIVE DEMO SPEAKERS"
-                    desc="Continuous stage action: technique in real time, evaluation, and feedback you can apply immediately."
+                    desc="Continuous live demonstrations: technique in real time, expert evaluation, and feedback you can apply immediately."
                 />
                 <DoubleMarquee
                     items={nonstop}
                     speedPxPerSec={70}
                     card="medium"
-                />
-
-                {/* PRIME */}
-                <BlockHeader
-                    title={<>PRIME <span className="font-serif italic" style={{ color: GOLD }}>SPEAKERS</span></>}
-                    kicker="EXCLUSIVITY & MASTERY"
-                    desc="Headline names selected for impact, expertise, and stage presence."
-                />
-                <SingleMarquee
-                    items={prime}
-                    speedPxPerSec={60}
-                    card="large"
                 />
 
                 {/* SPECIALISTS */}
@@ -168,16 +150,16 @@ function BlockHeader({
 }) {
     return (
         <div className="max-w-4xl mx-auto text-center">
-            <div className="text-[11px] tracking-[0.55em] uppercase font-semibold text-white/60">
+            <div className="text-[11px] tracking-[0.6em] uppercase font-black text-white/40 mb-4">
                 {kicker}
             </div>
-            <h3 className="mt-4 text-5xl md:text-6xl font-light tracking-tight">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.95] text-white">
                 {title}
             </h3>
-            <p className="mt-5 text-sm md:text-base text-white/70 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-white/70 max-w-2xl mx-auto font-medium leading-relaxed">
                 {desc}
             </p>
-            <div className="mt-6 h-px w-24 mx-auto" style={{ background: GOLD_SOFT }} />
+            <div className="mt-10 h-px w-24 mx-auto" style={{ background: GOLD_SOFT }} />
         </div>
     );
 }

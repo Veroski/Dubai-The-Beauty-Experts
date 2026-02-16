@@ -22,12 +22,12 @@ export function StrategicGrowthSection() {
           className="w-full h-full object-cover"
         />
 
-        {/* Tinte con degradado correcto */}
+        {/* Tint with cold/sand gradient - no greenish tones */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, #3D311B 0%, #4A3D23 18%, rgba(106,91,58,0.85) 40%, rgba(220,207,182,0.75) 75%, #F9F3E9 100%)",
+              "linear-gradient(180deg, #3A3229 0%, #4A4235 18%, rgba(96,89,75,0.85) 40%, rgba(210,195,175,0.75) 75%, #F9F5ED 100%)",
           }}
         />
       </div>
@@ -39,33 +39,13 @@ export function StrategicGrowthSection() {
         </div>
 
         {/* HEADLINE PRINCIPAL */}
-        <h2
-          className="uppercase tracking-tight leading-[0.95] text-[#241D12]"
-          style={{
-            fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
-            fontWeight: 900,
-            fontStretch: "condensed",
-          }}
-        >
-          <span className="block text-4xl md:text-6xl">
-            Elevate Your
-          </span>
-          <span className="block text-4xl md:text-6xl">
-            Professional Career
-          </span>
+        <h2 className="uppercase tracking-tighter leading-[0.9] text-[#241D12] text-4xl md:text-5xl lg:text-6xl font-black">
+          Elevate Your<br />
+          Professional Career
         </h2>
 
-        {/* SUBLINE OUTLINE ESTILO DUBAI */}
-        <div
-          className="mt-10 uppercase tracking-tight text-3xl md:text-5xl"
-          style={{
-            fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
-            fontWeight: 900,
-            fontStretch: "condensed",
-            WebkitTextStroke: "1px #241D12",
-            color: "transparent",
-          }}
-        >
+        {/* SUBLINE - Cleaner styling */}
+        <div className="mt-12 uppercase tracking-tighter text-3xl md:text-4xl font-black text-[#241D12]">
           This Is Not Just Another Congress
         </div>
 

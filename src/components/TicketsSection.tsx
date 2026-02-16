@@ -10,7 +10,7 @@ type TicketsSectionProps = {
 
 export function TicketsSection({
   stripeCheckoutUrl = "https://buy.stripe.com/tu_link_aqui", // Reemplazar con link real
-  whatsappUrl = "https://wa.me/+34647122470", // Reemplazar con link real
+  whatsappUrl = "https://wa.me/34603908049",
 }: TicketsSectionProps) {
 
   return (
@@ -39,6 +39,7 @@ export function TicketsSection({
             <div className="space-y-4 md:space-y-6">
               <h3 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-[#B48B2A]">All-Inclusive Experience</h3>
               <div className="grid gap-3 md:gap-4">
+                <Benefit title="Championship Nomination Included" detail="One official nomination included. Additional nominations: €200 each." />
                 <Benefit title="Dual Certification" detail="Attendance & Championship official credentials." />
                 <Benefit title="5-Star Catering" detail="Gourmet lunches, coffee breaks & Gala Dinner." />
                 <Benefit title="VIP Master Kit" detail="Welcome Bag + THE BEAUTY EXPERTS 2026 Magazine." />
@@ -130,6 +131,33 @@ export function TicketsSection({
                   <ShieldCheck className="text-[#C9A24A] shrink-0 w-3.5 h-3.5 md:w-4 md:h-4" />
                   Authorized Stripe Partner • Secure Transaction
                 </div>
+
+                {/* Pricing Add-Ons Reminder — Table Structure */}
+                <div className="mt-8 pt-6 border-t border-gray-100">
+                  <p className="text-[9px] tracking-[0.3em] uppercase font-black text-gray-300 mb-4">Also available separately</p>
+
+                  <div className="space-y-3">
+                    <div className="grid grid-cols-2 pb-1.5 border-b border-gray-50 text-[9px] uppercase tracking-wider font-bold text-gray-200">
+                      <span>Item</span>
+                      <span className="text-right">Price</span>
+                    </div>
+
+                    <div className="space-y-2">
+                      <CompactPricingRow label="1 Day Pass" price="450€" />
+                      <CompactPricingRow label="2 Day Pass" price="800€" />
+                    </div>
+
+                    <div className="pt-1.5 space-y-2">
+                      <CompactPricingRow label="Championship Latex" price="200€" />
+                      <CompactPricingRow label="Championship Model" price="250€" />
+                      <CompactPricingRow label="Gala Dinner" price="220€" />
+                    </div>
+
+                    <p className="text-[9px] text-gray-300 italic pt-1">
+                      * Passes exclude gala dinner, meals and competition.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* WHATSAPP SUPPORT */}
@@ -192,5 +220,16 @@ function InstallmentOption({ plan, detail, onClick }: { plan: string, detail: st
         <ArrowRight size={14} className="text-gray-300 group-hover:text-[#C9A24A] group-hover:translate-x-1 transition-all" />
       </div>
     </button>
+  );
+}
+
+function CompactPricingRow({ label, price }: { label: string; price: string }) {
+  return (
+    <div className="grid grid-cols-2 py-0.5 group border-b border-gray-50/50 last:border-0">
+      <span className="text-[10px] font-bold text-gray-400 group-hover:text-gray-600 transition-colors uppercase tracking-tighter">{label}</span>
+      <div className="text-right">
+        <span className="text-[10px] font-black text-[#C9A24A]">{price}</span>
+      </div>
+    </div>
   );
 }

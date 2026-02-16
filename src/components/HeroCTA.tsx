@@ -11,8 +11,8 @@ interface HeroCTAProps {
 
 export default function HeroCTA({
     href = "#tickets",
-    label = "Get Tickets Now",
-    subtext = "Limited availability for this session",
+    label = "Join The Beauty Experts Dubai",
+    subtext = "Limited seats · Secure your spot now",
     className = "",
 }: HeroCTAProps) {
 

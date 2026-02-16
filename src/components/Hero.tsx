@@ -135,16 +135,27 @@ export default function Hero() {
                 />
 
                 {/* Contenedor central 3D */}
-                <div className="relative z-40 text-center px-6 pt-24 md:pt-0 max-w-5xl mx-auto [transform-style:preserve-3d]">
+                <div className="relative z-40 text-center px-6 pt-24 md:pt-0 max-w-7xl mx-auto [transform-style:preserve-3d]">
                     {/* TEXTO (más lejos) */}
                     <div style={text3DStyle} className="[transform-style:preserve-3d]">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter mb-8 text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.4)] leading-[1.1] uppercase">
-                            International Micropigmentation Congress Dubai 2026
-                        </h1>
+                        {/* Event Name - HUGE and PROMINENT */}
+                        <div className="mb-6 md:mb-8">
+                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#FBF9F6] drop-shadow-[0_15px_40px_rgba(0,0,0,0.55)] leading-[0.9] uppercase">
+                                THE BEAUTY EXPERTS
+                            </h1>
+                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#D4AF37] drop-shadow-[0_15px_40px_rgba(212,175,55,0.45)] leading-[0.9] uppercase mt-2">
+                                DUBAI CONGRESS
+                            </h1>
+                        </div>
 
-                        <p className="text-sm md:text-lg text-white uppercase tracking-[0.3em] md:tracking-[0.4em] font-medium drop-shadow-md max-w-3xl mx-auto">
-                            <span className="md:bg-[#D9B35F]/35 md:px-4 md:py-1 rounded-sm leading-relaxed [box-decoration-break:clone] [-webkit-box-decoration-break:clone]">
-                                Training, technique, and professional growth with international specialists.
+                        {/* Subtitle - Micropigmentation + Authority */}
+                        <p className="text-lg md:text-2xl lg:text-3xl text-white uppercase tracking-[0.15em] md:tracking-[0.2em] font-bold drop-shadow-lg mb-4">
+                            International Micropigmentation
+                        </p>
+
+                        <p className="text-sm md:text-base text-white/95 tracking-[0.2em] font-medium drop-shadow-md max-w-3xl mx-auto">
+                            <span className="md:bg-[#D4AF37]/50 md:px-4 md:py-2 rounded-sm leading-relaxed [box-decoration-break:clone] [-webkit-box-decoration-break:clone] border-b-2 border-[#D4AF37]/80 md:border-none">
+                                Elite training, advanced technique, and professional positioning with world-class specialists
                             </span>
                         </p>
                     </div>

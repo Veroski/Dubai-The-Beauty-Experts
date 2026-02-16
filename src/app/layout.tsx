@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
+import { Montserrat, Lexend_Giga } from "next/font/google";
 import "./globals.css";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "700", "900"],
+});
+
+const lexendGiga = Lexend_Giga({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+  weight: ["400", "700", "900"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://thebeautyexpertsdubai.com"),
@@ -40,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased selection:bg-goldenBeige/30">
+      <body className={`${montserrat.variable} ${lexendGiga.variable} font-sans antialiased selection:bg-goldenBeige/30`}>
         {children}
       </body>
     </html>

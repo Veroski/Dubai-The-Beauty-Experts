@@ -32,7 +32,7 @@ export function MysteryCoachSection() {
           </span>
 
           <h2 className="mt-6 text-5xl md:text-7xl font-light tracking-tighter text-[#4A4238]">
-            The <span className="italic font-serif text-[#C9A24A]">Apex</span> Mind.
+            The <span className="italic font-serif text-[#C9A24A]">High-Performance</span> Mind.
           </h2>
 
           <p className="mt-6 text-xl md:text-2xl text-[#8B7E6D] max-w-xl mx-auto font-light leading-relaxed">

@@ -24,7 +24,7 @@ export function Navbar() {
         []
     );
 
-    const whatsappLink = "https://wa.me/34647122470";
+    const whatsappLink = "https://wa.me/34603908049";
 
     return (
         <header className="fixed top-0 left-0 w-full z-[100]">

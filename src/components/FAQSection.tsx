@@ -35,8 +35,10 @@ const FAQS: FAQItem[] = [
     q: "What is the ticket price and what does it include?",
     a: (
       <>
-        We are offering a <strong>pre-sale price of €1000 + VAT</strong> (valid until February 2026). The regular price will be €1500 + VAT.
-        The pass is <strong>All-Inclusive</strong>: access to conferences, participation in one championship nomination, 2 certificates, official magazine, gift bag, coffee breaks, lunches (October 16 & 17), and the Gala Dinner.
+        Current early bird price: <strong>€1,000 + VAT</strong>.
+        The price follows a monthly escalation structure: <strong>€1,100</strong>, <strong>€1,200</strong>, reaching <strong>€1,500 + VAT</strong> closer to the event.
+        Both <strong>single payment</strong> and flexible <strong>installment plans</strong> are available.
+        Your pass includes: Full congress access, one championship nomination, dual certification, official kit, magazine, coffee breaks, lunches, and the <strong>exclusive Gala Dinner</strong>.
       </>
     ),
   },
@@ -64,11 +66,20 @@ const FAQS: FAQItem[] = [
     ),
   },
   {
+    q: "Can I register for additional championship nominations?",
+    a: (
+      <>
+        Yes. Your ticket includes <strong>one championship nomination</strong>. Additional nominations are available for <strong>€200 each</strong>.
+        Contact <strong>Patricia Songel</strong> at <strong>+34 647 12 24 70</strong> for registration.
+      </>
+    ),
+  },
+  {
     q: "How can I get more information or technical assistance?",
     a: (
       <>
         You can contact <strong>Patricia Songel</strong> directly at
-        <strong className="ml-1">+34 647 12 24 70</strong> for personalized assistance regarding registrations and additional nominations (€200).
+        <strong className="ml-1">+34 647 12 24 70</strong> for personalized assistance regarding registrations, payments, and any questions about the event.
       </>
     ),
   },

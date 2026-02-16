@@ -87,19 +87,46 @@ export function ProgramArchitectureSection() {
                         <div className="space-y-4">
                             <ContextBlock
                                 day="15 OCT"
-                                title="International Championship & Private Gala"
-                                description="Top artists compete on stage. Precision, artistry and recognition at the highest level."
+                                title="International Championship & Opening Evening"
+                                description="Elite artists compete live. Precision, artistry, and recognition at the highest level. Private opening for participants."
                             />
                             <ContextBlock
                                 day="16 OCT"
-                                title="Main Congress & Live Demonstrations"
-                                description="Advanced techniques, live demos and real strategies from leading micropigmentation specialists."
+                                title="Full Congress Day 1: Mastery & Global Strategy"
+                                description="Uninterrupted day of advanced masterclasses, live technical demonstrations, and high-impact business strategies to scale your professional career."
                             />
                             <ContextBlock
                                 day="17 OCT"
-                                title="Business, Mindset & Grand Awards"
-                                description="Positioning, authority and growth. Close the experience with leadership sessions and final awards."
+                                title="Full Congress Day 2: Authority & Gala Dinner"
+                                description="Final masterclasses focused on professional positioning and leadership. The experience culminates with the prestigious Gala Dinner and International Awards Ceremony."
                             />
+                        </div>
+
+                        {/* Pricing Reminder — Clean Table Structure */}
+                        <div className="mt-12 pt-8 border-t border-white/[0.08]">
+                            <p className="text-[11px] tracking-[0.5em] uppercase font-black text-[#C9A24A]/60 mb-6">
+                                Add-ons & Alternative Passes
+                            </p>
+
+                            <div className="space-y-4 max-w-lg">
+                                {/* Table Header */}
+                                <div className="pb-2 border-b border-white/[0.04] text-[10px] uppercase tracking-widest font-black text-white/20">
+                                    <span>Concepts not included in pass</span>
+                                </div>
+
+                                {/* Row Group: Passes */}
+                                <div className="space-y-2">
+                                    <PricingRow label="1 Day Pass" detail="No competition, meals, or gala dinner" />
+                                    <PricingRow label="2 Day Pass" detail="No competition, meals, or gala dinner" />
+                                </div>
+
+                                {/* Row Group: Extras */}
+                                <div className="pt-2 space-y-2">
+                                    <PricingRow label="Championship Latex" detail="One category entry" />
+                                    <PricingRow label="Championship Model" detail="One category entry" />
+                                    <PricingRow label="Gala Dinner" detail="Per person" />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -128,7 +155,7 @@ export function ProgramArchitectureSection() {
                             hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.9)]">
 
                                 <img
-                                    src="/estructura.webp"
+                                    src="/estructura.png"
                                     alt="Program architecture Dubai"
                                     className="w-full h-auto block object-cover rounded-sm grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
                                 />
@@ -152,5 +179,16 @@ function ContextBlock({ day, title, description }) {
             <h3 className="text-2xl font-light text-white/90 group-hover:text-white transition-colors mb-2 italic">{title}</h3>
             <p className="text-sm leading-relaxed text-white/30 group-hover:text-white/60 transition-colors max-w-sm">{description}</p>
         </article>
+    );
+}
+
+function PricingRow({ label, detail }: { label: string; detail: string }) {
+    return (
+        <div className="py-1 group border-b border-white/[0.02] last:border-0">
+            <div className="flex flex-col">
+                <span className="text-[13px] font-bold text-white/40 group-hover:text-white/70 transition-colors uppercase tracking-tight">{label}</span>
+                <span className="text-[10px] text-white/15 group-hover:text-white/25 transition-colors italic">{detail}</span>
+            </div>
+        </div>
     );
 }

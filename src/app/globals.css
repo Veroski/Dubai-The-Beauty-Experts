@@ -3,29 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --background: #F8F4EE;
-  --foreground: #1F2E3A;
+  --background: #F4F1EC;
+  --foreground: #22292F;
   
-  --warm-white: #F9F7F2;
-  --soft-ivory: #F2EBE1;
-  --desert-sand: #E2D1B9;
+  /* Cold/Sand Palette - No greenish tones */
+  --warm-white: #FAF8F5;
+  --soft-ivory: #F2EDE6;
+  --desert-sand: #DED6C9;
   --golden-beige: #D4AF37;
   --deep-gold: #B8860B;
-  --clear-sky-blue: #7FB3D5; /* Saturated, warmer blue */
-  --soft-blue-top: #A9CCE3;
-  --deep-petrol: #154360; /* Warmer deep blue */
+  --clear-sky-blue: #708CA3;
+  --soft-blue-top: #A3B8C9;
+  --deep-petrol: #243441;
+
+  /* Off-white/Cream text color */
+  --text-off-white: #FBF9F6;
+  --text-crudo: #F9F7F2;
 
   --primary-gold-gradient: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #B8860B 100%);
-  --hero-sky-gradient: linear-gradient(180deg, #5499C7 0%, #A9CCE3 50%, #F2EBE1 100%);
-  --desert-fade-gradient: linear-gradient(180deg, rgba(84,153,199,0.2) 0%, rgba(212,175,55,0.1) 100%);
-  --luxury-overlay-gradient: linear-gradient(180deg, rgba(21,67,96,0.5) 0%, rgba(21,67,96,0.2) 40%, rgba(21,67,96,0) 100%);
-  --subtle-gold-light-gradient: linear-gradient(180deg, rgba(255,215,0,0.3) 0%, rgba(212,175,55,0.15) 60%, rgba(212,175,55,0) 100%);
+  --hero-sky-gradient: linear-gradient(180deg, #5D7A8E 0%, #8DA4B8 50%, #DED6C9 100%);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: inherit;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, .font-impact {
+  font-family: var(--font-lexend), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
 }
 
 @layer utilities {
