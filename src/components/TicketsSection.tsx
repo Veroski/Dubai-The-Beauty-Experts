@@ -9,7 +9,7 @@ type TicketsSectionProps = {
 };
 
 export function TicketsSection({
-  stripeCheckoutUrl = "https://buy.stripe.com/tu_link_aqui", // Reemplazar con link real
+  stripeCheckoutUrl = "https://link.fastpaydirect.com/payment-link/6994d69388a3f0af5f805235", // Reemplazar con link real
   whatsappUrl = "https://wa.me/34603908049",
 }: TicketsSectionProps) {
 
