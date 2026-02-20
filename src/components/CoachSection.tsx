@@ -37,7 +37,7 @@ export function MysteryCoachSection() {
 
           <p className="mt-6 text-xl md:text-2xl text-[#8B7E6D] max-w-xl mx-auto font-light leading-relaxed">
             Beyond technique lies the mindset behind iconic results.
-            An elite mentor revealed exclusively for the Dubai Congress.
+            An elite mentor revealed exclusively for the Dubai championship week.
           </p>
         </div>
 

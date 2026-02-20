@@ -26,7 +26,7 @@ const FAQS: FAQItem[] = [
     a: (
       <ul className="list-disc ml-5 space-y-2">
         <li><strong>October 15:</strong> SMP, PMU, Microblading, and Areola Championship (Model / Latex).</li>
-        <li><strong>October 16:</strong> Conferences and uninterrupted live speaker demonstrations.</li>
+        <li><strong>October 16:</strong> Congress sessions and uninterrupted live speaker demonstrations.</li>
         <li><strong>October 17:</strong> Continuation of live demonstrations and closing with the grand <strong>Gala Dinner</strong> and awards ceremony.</li>
       </ul>
     ),
@@ -35,7 +35,7 @@ const FAQS: FAQItem[] = [
     q: "What is the ticket price and what does it include?",
     a: (
       <>
-        Current early bird price: <strong>€1,000 + VAT</strong>.
+        Current reference early bird for the 3-day pass: <strong>€1,000 + VAT</strong>.
         The price follows a monthly escalation structure: <strong>€1,100</strong>, <strong>€1,200</strong>, reaching <strong>€1,500 + VAT</strong> closer to the event.
         Both <strong>single payment</strong> and flexible <strong>installment plans</strong> are available.
         Your pass includes: Full congress access, one championship nomination, dual certification, official kit, magazine, coffee breaks, lunches, and the <strong>exclusive Gala Dinner</strong>.
@@ -89,24 +89,26 @@ export function FAQSection() {
   return (
     <section
       id="faq"
-      className="relative scroll-mt-28 md:scroll-mt-32 overflow-hidden py-24 md:py-32 bg-[#FDFCF9]"
+      className="relative scroll-mt-28 md:scroll-mt-32 overflow-hidden py-24 md:py-32 bg-[#161C22]"
     >
       {/* Background Decor */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(1100px_circle_at_50%_10%,rgba(201,162,74,0.12),transparent_60%)]" />
-        <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,rgba(36,29,18,0.5)_1px,transparent_1px),linear-gradient(to_bottom,rgba(36,29,18,0.5)_1px,transparent_1px)] bg-[size:60px_60px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,#12181D_0%,#18222C_58%,#1F2B35_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(72%_125%_at_50%_5%,rgba(243,249,255,0.2)_0%,rgba(243,249,255,0.07)_36%,rgba(243,249,255,0)_68%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.48)_0%,rgba(0,0,0,0.22)_28%,rgba(0,0,0,0.14)_50%,rgba(0,0,0,0.22)_72%,rgba(0,0,0,0.48)_100%)]" />
+        <div className="absolute inset-0 opacity-[0.14] bg-[repeating-linear-gradient(168deg,rgba(228,237,247,0.12)_0px,rgba(228,237,247,0.12)_1px,rgba(255,255,255,0)_10px,rgba(255,255,255,0)_22px)]" />
       </div>
 
       <div className="relative mx-auto max-w-4xl px-6">
         <header className="mx-auto max-w-3xl text-center">
-          <div className="text-[13px] tracking-[0.4em] uppercase font-bold text-[#B48B2A]">
+          <div className="text-[13px] tracking-[0.4em] uppercase font-bold text-[#E7C697]">
             Frequently Asked Questions
           </div>
-          <h2 className="mt-4 text-4xl md:text-5xl font-light tracking-tight text-[#241D12]">
+          <h2 className="mt-4 text-4xl md:text-5xl font-light tracking-tight text-[#F6EBDD]">
             Everything you need to know about <br />
-            <span className="font-serif italic text-[#C9A24A]">The Beauty Experts Dubai</span>
+            <span className="font-serif italic text-[#E7C697]">The Beauty Experts Dubai</span>
           </h2>
-          <div className="mt-8 h-px w-20 mx-auto bg-[#C9A24A]/30" />
+          <div className="mt-8 h-px w-20 mx-auto bg-[#E7C697]/35" />
         </header>
 
         <div className="mt-16 space-y-4">
@@ -116,7 +118,7 @@ export function FAQSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-sm text-[#8B7E6D] uppercase tracking-widest font-medium">
+          <p className="text-sm text-[#F3E8DA]/70 uppercase tracking-widest font-medium">
             Arjaan by Rotana Media City · October 15–17, 2026
           </p>
         </div>
@@ -127,17 +129,17 @@ export function FAQSection() {
 
 function FAQRow({ item }: { item: FAQItem }) {
   return (
-    <details className="group border border-[#C9A24A]/20 bg-white/50 backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#C9A24A]/40">
+    <details className="group border border-[#6F7D8A]/40 bg-[linear-gradient(145deg,#1A242D_0%,#141D25_52%,#0F161D_100%)] backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#E7C697]/55">
       <summary className="list-none cursor-pointer p-6 md:p-8 flex items-center justify-between gap-4 select-none">
-        <span className="text-lg md:text-xl font-medium text-[#241D12] pr-4">
+        <span className="text-lg md:text-xl font-medium text-[#F6EBDD] pr-4">
           {item.q}
         </span>
         <div className="relative flex-shrink-0 w-6 h-6">
-          <div className="absolute inset-0 bg-[#C9A24A] rotate-90 group-open:rotate-180 transition-transform duration-300 h-[2px] w-6 top-1/2 -translate-y-1/2" />
-          <div className="absolute inset-0 bg-[#C9A24A] group-open:opacity-0 transition-opacity duration-300 h-6 w-[2px] left-1/2 -translate-x-1/2" />
+          <div className="absolute inset-0 bg-[#E7C697] rotate-90 group-open:rotate-180 transition-transform duration-300 h-[2px] w-6 top-1/2 -translate-y-1/2" />
+          <div className="absolute inset-0 bg-[#E7C697] group-open:opacity-0 transition-opacity duration-300 h-6 w-[2px] left-1/2 -translate-x-1/2" />
         </div>
       </summary>
-      <div className="px-6 pb-8 md:px-8 md:pb-10 text-[#4A4238]/90 leading-relaxed text-base md:text-lg border-t border-[#C9A24A]/10 pt-4">
+      <div className="px-6 pb-8 md:px-8 md:pb-10 text-[#F3E8DA]/88 leading-relaxed text-base md:text-lg border-t border-[#6F7D8A]/24 pt-4">
         {item.a}
       </div>
     </details>

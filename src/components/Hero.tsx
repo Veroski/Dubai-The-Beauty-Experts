@@ -81,10 +81,13 @@ export default function Hero() {
     }, []);
 
     return (
-        <main id="hero" className="relative min-h-screen w-full bg-[#E6D3A3]">
+        <main id="hero" className="relative min-h-screen w-full bg-[#22282C]">
             <section className="relative h-screen w-full flex items-center justify-center overflow-hidden [perspective:1200px] z-10">
                 {/* Fondo cielo */}
-                <div className="absolute inset-0 bg-sky-gradient z-0 opacity-80" />
+                <div
+                    className="absolute inset-0 z-0 opacity-95"
+                    style={{ background: "linear-gradient(180deg, #3B4B59 0%, #22282C 100%)" }}
+                />
 
                 {/* Parallax Image (Desktop only) */}
                 <div
@@ -103,26 +106,26 @@ export default function Hero() {
                                     transform: "scale(1.05)",
                                 }}
                             >
-                                <img src="/dubai.jpg" alt="" className="w-full h-full object-cover" />
+                                <img src="/dubai-skyline-grey.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
                             <img
-                                src="/dubai.jpg"
+                                src="/dubai-skyline-grey.jpg"
                                 alt="Dubai Skyline"
                                 className="relative z-10 w-full h-full object-cover"
                             />
 
-                            <div className="absolute inset-0 z-20 bg-black/10 mix-blend-overlay" />
-                            <div className="absolute inset-x-0 bottom-0 z-30 h-[40%] bg-gradient-to-t from-[#E6D3A3] via-[#E6D3A3]/40 to-transparent" />
+                            <div className="absolute inset-0 z-20 bg-[#22282C]/55 mix-blend-multiply" />
+                            <div className="absolute inset-x-0 bottom-0 z-30 h-[45%] bg-gradient-to-t from-[#22282C] via-[#22282C]/45 to-transparent" />
                         </div>
                     </SimpleParallax>
                 </div>
 
                 {/* Plain Image (Mobile only) */}
                 <div className="md:hidden absolute inset-0 z-10">
-                    <img src="/dubai.jpg" alt="Dubai Skyline" className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 z-20 bg-black/20" />
-                    <div className="absolute inset-x-0 bottom-0 z-30 h-[40%] bg-gradient-to-t from-[#E6D3A3] via-[#E6D3A3]/60 to-transparent" />
+                    <img src="/dubai-skyline-grey.jpg" alt="Dubai Skyline" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 z-20 bg-[#22282C]/60" />
+                    <div className="absolute inset-x-0 bottom-0 z-30 h-[45%] bg-gradient-to-t from-[#22282C] via-[#22282C]/60 to-transparent" />
                 </div>
 
                 {/* Spotlight */}
@@ -140,22 +143,22 @@ export default function Hero() {
                     <div style={text3DStyle} className="[transform-style:preserve-3d]">
                         {/* Event Name - HUGE and PROMINENT */}
                         <div className="mb-6 md:mb-8">
-                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#FBF9F6] drop-shadow-[0_15px_40px_rgba(0,0,0,0.55)] leading-[0.9] uppercase">
+                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-[linear-gradient(180deg,#F6FAFF_0%,#DCE5F0_32%,#AEBBCB_60%,#F2F7FF_100%)] drop-shadow-[0_12px_30px_rgba(0,0,0,0.58)] leading-[0.9] uppercase">
                                 THE BEAUTY EXPERTS
                             </h1>
-                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[#D4AF37] drop-shadow-[0_15px_40px_rgba(212,175,55,0.45)] leading-[0.9] uppercase mt-2">
-                                DUBAI CONGRESS
+                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-[linear-gradient(180deg,#FFFFFF_0%,#E7EEF8_35%,#B7C4D4_62%,#F4F8FF_100%)] drop-shadow-[0_12px_30px_rgba(0,0,0,0.52)] leading-[0.9] uppercase mt-2">
+                                DUBAI
                             </h1>
                         </div>
 
-                        {/* Subtitle - Micropigmentation + Authority */}
-                        <p className="text-lg md:text-2xl lg:text-3xl text-white uppercase tracking-[0.15em] md:tracking-[0.2em] font-bold drop-shadow-lg mb-4">
-                            International Micropigmentation
+                        {/* Subtitle - Official naming */}
+                        <p className="text-lg md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-[linear-gradient(180deg,#EEF4FC_0%,#CAD6E5_55%,#9FAFC2_100%)] uppercase tracking-[0.15em] md:tracking-[0.2em] font-bold drop-shadow-[0_8px_18px_rgba(0,0,0,0.52)] mb-4">
+                            International Congress &amp; Championship PMU | SMP
                         </p>
 
-                        <p className="text-sm md:text-base text-white/95 tracking-[0.2em] font-medium drop-shadow-md max-w-3xl mx-auto">
-                            <span className="md:bg-[#D4AF37]/50 md:px-4 md:py-2 rounded-sm leading-relaxed [box-decoration-break:clone] [-webkit-box-decoration-break:clone] border-b-2 border-[#D4AF37]/80 md:border-none">
-                                Elite training, advanced technique, and professional positioning with world-class specialists
+                        <p className="text-sm md:text-base text-[#EDF3FB]/92 tracking-[0.2em] font-medium drop-shadow-md max-w-3xl mx-auto">
+                            <span className="md:bg-[#7A858E]/32 md:px-4 md:py-2 rounded-sm leading-relaxed [box-decoration-break:clone] [-webkit-box-decoration-break:clone] border-b-2 border-[#B8C6D8]/75 md:border-none">
+                            A PLACE TO WITNES GREATNESS - A PLACE TO BECOME IT
                             </span>
                         </p>
                     </div>

@@ -22,7 +22,7 @@ const SPEAKER_DATA: Speaker[] = [
     { id: "prime-9", name: "RAFA SANZ", image: "/artistas-dubai/PRIME-SPEAKERS/RAFA SANZ.webp", group: "prime" },
 
     { id: "nonstop-1", name: "ALESSANDRA LA CORTE", image: "/artistas-dubai/JUDGE-DEMO-SPEAKER/ALESSANDRA LA CORTE.webp", group: "nonstop" },
-    { id: "nonstop-2", name: "CELINE NANTEL", image: "/artistas-dubai/JUDGE-DEMO-SPEAKER/CELINE NANTEL.webp", group: "nonstop" },
+    { id: "nonstop-2", name: "CECILE GOUVEIA", image: "/artistas-dubai/JUDGE-DEMO-SPEAKER/CECILE GOUVEIA.webp", group: "nonstop" },
     { id: "nonstop-3", name: "CERISARA MELISSA", image: "/artistas-dubai/JUDGE-DEMO-SPEAKER/CERISARA MELISSA.webp", group: "nonstop" },
     { id: "nonstop-4", name: "ERIKA CALO", image: "/artistas-dubai/JUDGE-DEMO-SPEAKER/ERIKA CALO.webp", group: "nonstop" },
     { id: "nonstop-5", name: "LIDIA BLASCO", image: "/artistas-dubai/JUDGE-DEMO-SPEAKER/LIDIA BLASCO.webp", group: "nonstop" },
@@ -37,22 +37,21 @@ const SPEAKER_DATA: Speaker[] = [
     { id: "others-3", name: "TRANG NGUYEN", image: "/artistas-dubai/OTHER/TRANG NGUYEN.webp", group: "speakers" },
 ];
 
-const GOLD = "#C9A24A";
-const GOLD_SOFT = "rgba(201,162,74,0.25)";
+const GOLD = "#A85E36";
+const GOLD_SOFT = "rgba(168,94,54,0.3)";
 
 export function SpeakersSection() {
     const prime = useMemo(() => SPEAKER_DATA.filter((s) => s.group === "prime"), []);
     const nonstop = useMemo(() => SPEAKER_DATA.filter((s) => s.group === "nonstop"), []);
-    const specialists = useMemo(() => SPEAKER_DATA.filter((s) => s.group === "speakers"), []);
+    const ambassadors = useMemo(() => SPEAKER_DATA.filter((s) => s.group === "speakers"), []);
 
     return (
-        <section id="speakers" className="relative z-50 bg-[#070607] text-white py-24 overflow-hidden">
-            {/* Luxury background: obsidian + gold glow + sand haze */}
+        <section id="speakers" className="relative z-50 bg-[#1A1A1A] text-[#CBA785] py-24 overflow-hidden">
+            {/* Dusk background: asphalt to deep taupe */}
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute inset-0 bg-[radial-gradient(1100px_circle_at_20%_15%,rgba(201,162,74,0.18),transparent_60%),radial-gradient(900px_circle_at_85%_35%,rgba(140,190,255,0.10),transparent_58%)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_55%_110%,rgba(220,190,140,0.10),transparent_55%)]" />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black" />
-                <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,rgba(255,255,255,0.8)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.8)_1px,transparent_1px)] bg-[size:90px_90px]" />
+                <div className="absolute inset-0 bg-[radial-gradient(1200px_circle_at_18%_12%,rgba(107,79,59,0.24),transparent_58%),radial-gradient(900px_circle_at_82%_28%,rgba(168,94,54,0.18),transparent_56%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,#22282C_0%,#1A1A1A_55%,#3D322B_100%)]" />
+                <div className="absolute inset-0 opacity-[0.045] bg-[linear-gradient(to_right,rgba(255,255,255,0.75)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.75)_1px,transparent_1px)] bg-[size:100px_100px]" />
             </div>
 
             <div className="relative max-w-7xl mx-auto px-4 space-y-24">
@@ -84,19 +83,29 @@ export function SpeakersSection() {
                     card="medium"
                 />
 
-                {/* SPECIALISTS */}
+                {/* AMBASSADORS */}
                 <div className="pt-4">
                     <BlockHeader
-                        title={<>SPECIALISTS</>}
-                        kicker="WORKSHOPS & SUPPORT"
-                        desc="Supporting experts and workshop leaders to deepen your skills beyond the main stage."
+                        title={<>AMBASSADORS</>}
+                        kicker="INTERNATIONAL REPRESENTATION"
+                        desc="Global voices amplifying the championship spirit across markets, teams, and communities."
                     />
 
                     <div className="flex flex-wrap justify-center gap-6">
-                        {specialists.map((speaker) => (
+                        {ambassadors.map((speaker) => (
                             <SpeakerCard key={speaker.id} speaker={speaker} variant="small" />
                         ))}
                     </div>
+                </div>
+
+                <div className="mx-auto max-w-4xl rounded-3xl border border-[#6B4F3B]/55 bg-[#2B231E]/70 px-8 py-10 text-center shadow-[0_30px_80px_-40px_rgba(41,28,20,0.6)]">
+                    <p className="text-[11px] tracking-[0.55em] uppercase font-black text-[#A85E36]">International Teams</p>
+                    <h4 className="mt-4 text-3xl md:text-4xl font-black uppercase tracking-tight text-[#CBA785]">
+                        Join The Winning Teams
+                    </h4>
+                    <p className="mt-4 text-lg text-[#CBA785]/82 font-[var(--font-lexend)] font-normal tracking-[0.01em]">
+                        Poland • Canada • Vietnam
+                    </p>
                 </div>
 
                 <SectionCTA />
@@ -150,13 +159,13 @@ function BlockHeader({
 }) {
     return (
         <div className="max-w-4xl mx-auto text-center">
-            <div className="text-[11px] tracking-[0.6em] uppercase font-black text-white/40 mb-4">
+            <div className="text-[11px] tracking-[0.6em] uppercase font-black text-[#CBA785]/55 mb-4">
                 {kicker}
             </div>
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.95] text-white">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.95] text-[#CBA785]">
                 {title}
             </h3>
-            <p className="mt-8 text-lg md:text-xl text-white/70 max-w-2xl mx-auto font-medium leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-[#CBA785]/75 max-w-2xl mx-auto font-[var(--font-lexend)] font-normal tracking-[-0.01em] leading-relaxed">
                 {desc}
             </p>
             <div className="mt-10 h-px w-24 mx-auto" style={{ background: GOLD_SOFT }} />

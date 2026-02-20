@@ -16,15 +16,15 @@ const lexendGiga = Lexend_Giga({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://thebeautyexpertsdubai.com"),
-  title: "Dubai | The beauty experts",
-  description: "International Micropigmentation Congress Dubai 2026. The most prestigious PMU event, now in the heart of Dubai. Join elite artists and world-class speakers.",
-  keywords: ["micropigmentation", "Dubai 2026", "PMU congress", "beauty experts", "permanent makeup", "masterclass"],
+  title: "The Beauty Experts Dubai 2026 | International Congress & Championship PMU | SMP",
+  description: "The Beauty Experts Dubai 2026: International Congress & Championship PMU | SMP. Join elite artists, championship teams, and world-class speakers in Dubai.",
+  keywords: ["micropigmentation", "Dubai 2026", "PMU congress", "PMU championship", "beauty experts", "permanent makeup", "SMP"],
   icons: {
     icon: "/icon.webp",
   },
   openGraph: {
-    title: "Dubai | The beauty experts",
-    description: "International Micropigmentation Congress Dubai 2026. Training, technique, and professional growth with international specialists.",
+    title: "The Beauty Experts Dubai 2026 | International Congress & Championship PMU | SMP",
+    description: "International Congress & Championship PMU | SMP in Dubai. Competition, conferences, demos, and premium networking with global leaders.",
     url: "https://thebeautyexpertsdubai.com", // Replace with actual URL if known
     siteName: "The Beauty Experts Dubai",
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dubai | The beauty experts",
-    description: "International Micropigmentation Congress Dubai 2026. Join the elite in Dubai.",
+    description: "The Beauty Experts Dubai 2026. International Congress & Championship PMU | SMP.",
     images: ["/icon.webp"],
   },
 };

@@ -18,7 +18,7 @@ export function Navbar() {
         () => [
             { label: "Speakers", href: "#speakers" },
             { label: "Program", href: "#program" },
-            { label: "Mindset", href: "#coach" },
+            { label: "Mindset", href: "#apex" },
             { label: "FAQ", href: "#faq" },
         ],
         []
@@ -41,8 +41,8 @@ export function Navbar() {
                         background: `
               linear-gradient(
                 to bottom,
-                rgba(230,211,163,0.55) 0%,
-                rgba(230,211,163,0.30) 45%,
+                rgba(34,40,44,0.78) 0%,
+                rgba(34,40,44,0.5) 45%,
                 rgba(0,0,0,0) 100%
               )
             `,
@@ -72,7 +72,7 @@ export function Navbar() {
                             <a
                                 key={link.label}
                                 href={link.href}
-                                className="text-[13px] font-semibold uppercase tracking-[0.2em] text-white/90 hover:text-[#E6D3A3] transition-all duration-300"
+                                className="text-[13px] font-semibold uppercase tracking-[0.2em] text-[#E2D6C7] hover:text-[#CBA785] transition-all duration-300"
                             >
                                 {link.label}
                             </a>
@@ -84,7 +84,7 @@ export function Navbar() {
                                 href={whatsappLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-5 py-2.5 border border-[#E6D3A3] text-[#E6D3A3] text-[12px] font-bold uppercase tracking-wider rounded-[4px] hover:bg-[#E6D3A3] hover:text-black transition-all duration-300"
+                                className="px-5 py-2.5 border border-[#7A858E] text-[#CBA785] text-[12px] font-bold uppercase tracking-wider rounded-[4px] hover:bg-[#CBA785] hover:text-black transition-all duration-300"
                             >
                                 Contact
                             </a>
@@ -92,7 +92,7 @@ export function Navbar() {
                             {/* Main Tickets Button */}
                             <a
                                 href="#tickets"
-                                className="px-6 py-3 bg-[#C9A24A] text-black text-[13px] font-black uppercase tracking-[0.1em] rounded-[4px] shadow-lg hover:bg-white transition-all duration-300 active:scale-95"
+                                className="px-6 py-3 bg-[#D99C78] text-[#22282C] text-[13px] font-black uppercase tracking-[0.1em] rounded-[4px] shadow-lg hover:bg-[#E7B597] transition-all duration-300 active:scale-95"
                             >
                                 Get Tickets
                             </a>
@@ -116,7 +116,7 @@ export function Navbar() {
 
                 {/* Mobile Menu Backdrop */}
                 {isMobileMenuOpen && (
-                    <div className="lg:hidden absolute top-full left-0 w-full bg-[#1A150E]/60 backdrop-blur-2xl border-t border-white/10 flex flex-col p-8 gap-6 animate-in fade-in slide-in-from-top-4 duration-300">
+                    <div className="lg:hidden absolute top-full left-0 w-full bg-[#22282C]/85 backdrop-blur-2xl border-t border-white/10 flex flex-col p-8 gap-6 animate-in fade-in slide-in-from-top-4 duration-300">
                         {links.map((link) => (
                             <a
                                 key={link.label}
@@ -135,14 +135,14 @@ export function Navbar() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="w-full py-4 border border-[#E6D3A3] text-[#E6D3A3] text-center font-bold uppercase tracking-widest rounded-sm"
+                                className="w-full py-4 border border-[#7A858E] text-[#CBA785] text-center font-bold uppercase tracking-widest rounded-sm"
                             >
                                 Contact WhatsApp
                             </a>
                             <a
                                 href="#tickets"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="w-full py-4 bg-[#C9A24A] text-black text-center font-black uppercase tracking-widest rounded-sm"
+                                className="w-full py-4 bg-[#D99C78] text-[#22282C] text-center font-black uppercase tracking-widest rounded-sm"
                             >
                                 Get Tickets
                             </a>

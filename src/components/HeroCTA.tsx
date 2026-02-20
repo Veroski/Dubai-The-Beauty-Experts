@@ -53,7 +53,7 @@ export default function HeroCTA({
                     "h-16 md:h-20 px-12 md:px-16",
                     "rounded-[22px]",
                     "font-extrabold uppercase tracking-tighter text-lg md:text-xl",
-                    "text-white whitespace-nowrap",
+                    "text-[#22282C] whitespace-nowrap",
                     "transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]",
                     "hover:-translate-y-1 hover:scale-[1.015]",
                     "active:scale-[0.97]",
@@ -61,20 +61,16 @@ export default function HeroCTA({
                 ].join(" ")}
                 style={{
                     background: `
-                        linear-gradient(
-                            180deg,
-                            rgba(35,35,35,0.55) 0%,
-                            rgba(18,18,18,0.75) 100%
-                        )
+                        linear-gradient(180deg, rgba(248,252,255,0.98) 0%, rgba(213,224,236,0.95) 42%, rgba(176,191,208,0.96) 100%)
                     `,
                     backdropFilter: "blur(12px) saturate(140%)",
                     WebkitBackdropFilter: "blur(12px) saturate(140%)",
-                    border: "1px solid rgba(217,179,95,0.5)",
+                    border: "1px solid rgba(189,203,220,0.72)",
                     boxShadow: `
-                        0 14px 28px rgba(0,0,0,0.5),
-                        0 4px 8px rgba(0,0,0,0.35),
-                        inset 0 1px 0 rgba(255,255,255,0.25),
-                        inset 0 -3px 8px rgba(0,0,0,0.45)
+                        0 14px 28px rgba(0,0,0,0.35),
+                        0 4px 8px rgba(0,0,0,0.2),
+                        inset 0 1px 0 rgba(255,255,255,0.68),
+                        inset 0 -3px 8px rgba(82,97,118,0.28)
                     `
                 }}
             >
@@ -84,8 +80,8 @@ export default function HeroCTA({
                     className="absolute inset-0 opacity-55 group-hover:opacity-75 transition-opacity duration-700 liquid-animate"
                     style={{
                         background: `
-                            radial-gradient(circle at 20% 30%, rgba(217,179,95,0.35) 0%, transparent 55%),
-                            radial-gradient(circle at 80% 70%, rgba(234,208,138,0.25) 0%, transparent 60%)
+                            radial-gradient(circle at 20% 30%, rgba(255,255,255,0.42) 0%, transparent 55%),
+                            radial-gradient(circle at 80% 70%, rgba(152,171,196,0.24) 0%, transparent 60%)
                         `,
                         filter: "blur(8px)",
                     }}
@@ -142,10 +138,10 @@ export default function HeroCTA({
 
             {subtext && (
                 <div className="relative mt-2">
-                    <span className="text-xs md:text-sm text-white/70 font-bold uppercase tracking-[0.2em]">
+                    <span className="text-xs md:text-sm text-[#E4EDF8] font-black uppercase tracking-[0.2em] drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
                         {subtext}
                     </span>
-                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-white/20" />
+                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-[#BCCADD]/65" />
                 </div>
             )}
         </div>
