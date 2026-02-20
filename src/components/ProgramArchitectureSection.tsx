@@ -110,7 +110,7 @@ export function ProgramArchitectureSection() {
                     {/* COLUMNA DERECHA: Imagen con Link en el Badge */}
                     <div className="relative flex justify-center md:justify-end min-h-[500px]">
                         <div
-                            className="group relative max-w-md lg:max-w-lg w-full transition-transform duration-200 ease-out will-change-transform"
+                            className="group relative max-w-lg lg:max-w-2xl w-full transition-transform duration-200 ease-out will-change-transform"
                             style={{ transform: `translateY(${parallaxY}px)` }}
                         >
                             {/* Badge Flotante con Link */}
@@ -130,7 +130,7 @@ export function ProgramArchitectureSection() {
                             <div className="relative overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform-gpu">
 
                                 <img
-                                    src="/estructura-dubai.png"
+                                    src="/structure.svg"
                                     alt="Program architecture Dubai"
                                     className="w-full h-auto block object-cover rounded-sm transition-all duration-700"
                                 />
