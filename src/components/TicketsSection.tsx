@@ -14,12 +14,12 @@ type TicketsSectionProps = {
 };
 
 export function TicketsSection({
-  stripeVipUrl = "https://buy.stripe.com/tu_link_vip",
+  stripeVipUrl = "https://link.fastpaydirect.com/payment-link/699e2d87e0aef97d62a161c6",
   stripe3DayUrl = "https://link.fastpaydirect.com/payment-link/6994d69388a3f0af5f805235",
-  stripe2DayUrl = "https://buy.stripe.com/tu_link_2day",
-  stripe1DayUrl = "https://buy.stripe.com/tu_link_1day",
-  stripeModelUrl = "https://buy.stripe.com/tu_link_model",
-  stripeLatexUrl = "https://buy.stripe.com/tu_link_latex",
+  stripe2DayUrl = "https://link.fastpaydirect.com/payment-link/699e2dfe44f21f5776dedef9",
+  stripe1DayUrl = "https://link.fastpaydirect.com/payment-link/699e2d49e0aef95e55a1612a",
+  stripeModelUrl = "https://link.fastpaydirect.com/payment-link/699e2d242f3e33c8f0e29b3d",
+  stripeLatexUrl = "https://link.fastpaydirect.com/payment-link/699e2ed844f21f6b32dee081",
   whatsappUrl = "https://wa.me/34603908049",
 }: TicketsSectionProps) {
   const vipCheckout = getCheckoutUrl(stripeVipUrl, whatsappUrl);
@@ -30,7 +30,7 @@ export function TicketsSection({
   const latexCheckout = getCheckoutUrl(stripeLatexUrl, whatsappUrl);
 
   return (
-    <section id="tickets" className="relative overflow-hidden py-24 bg-[#11161C] text-[#F3E8DA]">
+    <section id="tickets" className="relative overflow-hidden py-24 bg-[#11161C] text-[#F9F7F2]">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,#0D1318_0%,#131D26_58%,#1A2630_100%)]" />
         <div className="tickets-focus-wave absolute -inset-x-[20%] -inset-y-[10%] bg-[radial-gradient(82%_138%_at_50%_4%,rgba(247,252,255,0.46)_0%,rgba(247,252,255,0.2)_34%,rgba(247,252,255,0)_70%)]" />
@@ -43,9 +43,9 @@ export function TicketsSection({
 
       <div className="relative z-10 mx-auto max-w-7xl px-6">
         <header className="text-center max-w-4xl mx-auto">
-          <p className="text-[11px] tracking-[0.65em] uppercase font-black text-[#E7C697]">Ticket Architecture</p>
-          <h2 className="mt-6 text-4xl md:text-6xl font-black uppercase tracking-tight leading-[0.9] text-[#F6EBDD]">Choose Your Level</h2>
-          <p className="mt-6 text-lg md:text-xl text-[#F3E8DA]/88">INTERNATIONAL CONGRESS & CHAMPIONSHIP PMU | SMP</p>
+          <p className="text-[11px] tracking-[0.65em] uppercase font-montserrat font-medium text-[#C9B99B]">Ticket Architecture</p>
+          <h2 className="mt-6 text-4xl md:text-6xl font-bebas font-normal uppercase tracking-widest leading-[0.9] text-[#F9F7F2]">Choose Your Level</h2>
+          <p className="mt-6 text-lg md:text-xl text-[#F9F7F2]/88">INTERNATIONAL CONGRESS & CHAMPIONSHIP PMU | SMP</p>
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
             <GuideItem step="1" title="Choose Intent" text="VIP Experience, Congress Access, or Competition Entry." />
             <GuideItem step="2" title="Pick Pass" text="Select the tier that matches your strategic goal." />
@@ -64,12 +64,12 @@ export function TicketsSection({
             <div className="relative overflow-hidden rounded-3xl border border-[#6F7D8A]/50 bg-[linear-gradient(145deg,#1A242D_0%,#141D25_52%,#0F161D_100%)] p-8 md:p-10 shadow-[0_42px_130px_-45px_rgba(0,0,0,0.95)]">
               <div className="absolute inset-0 z-0 pointer-events-none bg-[radial-gradient(85%_100%_at_0%_0%,rgba(243,232,218,0.14)_0%,transparent_58%)]" />
               <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(120deg,transparent_0%,rgba(231,199,151,0.07)_42%,transparent_79%)]" />
-              <div className="absolute right-5 top-5 rounded-full border border-[#E7C697]/70 bg-[linear-gradient(135deg,#FAE9CF_0%,#EBC28E_100%)] px-3 py-1 text-[10px] font-black uppercase tracking-[0.22em] text-[#3D2B1C] shadow-[0_10px_24px_-14px_rgba(0,0,0,0.8)]">Limited</div>
+              <div className="absolute right-5 top-5 rounded-full border border-[#C9B99B]/70 bg-[linear-gradient(135deg,#E9E1D4_0%,#C9B99B_100%)] px-3 py-1 text-[10px] font-montserrat font-medium uppercase tracking-[0.22em] text-[#111820] shadow-[0_10px_24px_-14px_rgba(0,0,0,0.8)]">Limited</div>
               <div className="relative z-10 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
                 <div>
-                  <h3 className="text-4xl md:text-5xl font-black uppercase text-[#F6EBDD] tracking-[-0.02em]">VIP PASS</h3>
-                  <p className="mt-2 text-[#F3E8DA]/84 uppercase tracking-[0.14em] text-xs">Everything from 3-Day Pass + exclusive upgrades</p>
-                  <p className="mt-5 text-5xl md:text-6xl font-black text-[#F7E2C1]">1500€ <span className="text-base md:text-lg text-[#F3E8DA]/75">+ VAT</span></p>
+                  <h3 className="text-4xl md:text-5xl font-bebas font-normal tracking-widest uppercase text-[#F9F7F2]">VIP PASS</h3>
+                  <p className="mt-2 text-[#F9F7F2]/84 uppercase tracking-[0.14em] text-xs font-montserrat font-medium">Everything from 3-Day Pass + exclusive upgrades</p>
+                  <p className="mt-5 text-5xl md:text-6xl font-bebas font-normal tracking-widest uppercase text-[#E9E1D4]">1500€ <span className="text-base md:text-lg text-[#F9F7F2]/75">+ VAT</span></p>
                 </div>
                 <BuyButton href={vipCheckout.href} text={vipCheckout.ctaText("Book VIP Priority Now")} variant="vip" />
               </div>
@@ -170,7 +170,7 @@ export function TicketsSection({
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-[#687786]/52 bg-[#161F28]/88 px-6 py-3 text-[#F3E8DA] hover:text-[#FFFFFF] uppercase tracking-[0.16em] text-xs font-black transition-colors"
+            className="inline-flex items-center gap-2 rounded-full border border-[#687786]/52 bg-[#161F28]/88 px-6 py-3 text-[#F9F7F2] hover:text-[#F9F7F2] uppercase tracking-[0.1em] text-xs font-montserrat font-medium transition-colors"
           >
             Need custom payment support on WhatsApp <ArrowRight size={14} />
           </a>
@@ -242,11 +242,11 @@ function isConfiguredCheckoutUrl(url: string) {
 function SectionTitle({ icon, label, title }: { icon: React.ReactNode; label: string; title: string }) {
   return (
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-      <div className="inline-flex items-center gap-2 rounded-full border border-[#7A858E]/55 bg-[linear-gradient(135deg,#F6EBDD_0%,#E7C697_100%)] px-4 py-2 text-[10px] uppercase tracking-[0.35em] font-black text-[#3E2B1C] w-fit shadow-[0_10px_25px_-18px_rgba(231,199,151,0.35)]">
+      <div className="inline-flex items-center gap-2 rounded-full border border-[#7A858E]/55 bg-[linear-gradient(135deg,#F9F7F2_0%,#C9B99B_100%)] px-4 py-2 text-[10px] uppercase tracking-[0.35em] font-montserrat font-medium text-[#111820] w-fit shadow-[0_10px_25px_-18px_rgba(201,185,155,0.35)]">
         {icon}
         {label}
       </div>
-      <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-[#F6EBDD]">{title}</h3>
+      <h3 className="text-2xl md:text-3xl font-bebas font-normal uppercase tracking-widest text-[#F9F7F2]">{title}</h3>
     </div>
   );
 }
@@ -260,9 +260,9 @@ function BuyButton({ href, text, variant = "default" }: { href: string; text: st
       rel="noopener noreferrer"
       className={[
         "group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl transition-all duration-300",
-        "font-[var(--font-lexend)] uppercase tracking-[0.17em] font-black hover:-translate-y-0.5 hover:scale-[1.02]",
+        "font-montserrat font-medium uppercase tracking-[0.1em] hover:-translate-y-0.5 hover:scale-[1.02]",
         isVip
-          ? "border border-[#E7C697]/85 bg-[linear-gradient(135deg,#FAEAD2_0%,#EBC594_42%,#D19A58_100%)] px-10 py-5 text-base text-[#2D1E12] shadow-[0_20px_46px_-14px_rgba(0,0,0,0.9)] hover:shadow-[0_28px_62px_-12px_rgba(0,0,0,1)] animate-pulse"
+          ? "border border-[#C9B99B]/85 bg-[linear-gradient(135deg,#E9E1D4_0%,#C9B99B_42%,#9FAFC2_100%)] px-10 py-5 text-base text-[#111820] shadow-[0_20px_46px_-14px_rgba(0,0,0,0.9)] hover:shadow-[0_28px_62px_-12px_rgba(0,0,0,1)] animate-pulse"
           : "border border-[#AEBBC7]/75 bg-[linear-gradient(135deg,#EEF3F8_0%,#D5DEE7_48%,#BCC8D5_100%)] px-7 py-4 text-sm text-[#202D3C] shadow-[0_16px_36px_-14px_rgba(0,0,0,0.92)] hover:shadow-[0_22px_48px_-12px_rgba(0,0,0,1)]",
       ].join(" ")}
     >
@@ -281,7 +281,7 @@ function GhostButton({ href, text }: { href: string; text: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative inline-flex items-center justify-center gap-2 rounded-xl border border-[#667585]/48 bg-[linear-gradient(135deg,#1D2832_0%,#151E27_100%)] px-5 py-3 text-[#EDE1D1] text-xs uppercase tracking-[0.17em] font-[var(--font-lexend)] font-black hover:brightness-110 transition-all shadow-[0_12px_24px_-16px_rgba(0,0,0,0.95)] hover:shadow-[0_16px_30px_-14px_rgba(0,0,0,1)]"
+      className="group relative inline-flex items-center justify-center gap-2 rounded-xl border border-[#667585]/48 bg-[linear-gradient(135deg,#1D2832_0%,#151E27_100%)] px-5 py-3 text-[#E9E1D4] text-xs uppercase tracking-[0.1em] font-montserrat font-medium hover:brightness-110 transition-all shadow-[0_12px_24px_-16px_rgba(0,0,0,0.95)] hover:shadow-[0_16px_30px_-14px_rgba(0,0,0,1)]"
     >
       <span className="pointer-events-none absolute inset-0 rounded-xl bg-[linear-gradient(115deg,transparent_0%,rgba(247,233,213,0.14)_45%,transparent_75%)] opacity-70 group-hover:opacity-100 transition-opacity" />
       {text}
@@ -293,9 +293,9 @@ function GhostButton({ href, text }: { href: string; text: string }) {
 function GuideItem({ step, title, text }: { step: string; title: string; text: string }) {
   return (
     <article className="rounded-xl border border-[#667585]/38 bg-[linear-gradient(135deg,rgba(26,35,44,0.92)_0%,rgba(18,25,32,0.94)_100%)] px-4 py-3 text-left shadow-[0_18px_35px_-26px_rgba(0,0,0,0.98)]">
-      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#E7C697]">Step {step}</p>
-      <p className="mt-1 text-sm font-black uppercase tracking-[0.08em] text-[#F6EBDD]">{title}</p>
-      <p className="mt-1.5 text-xs text-[#F3E8DA]/84 leading-relaxed font-[var(--font-lexend)] font-medium tracking-[-0.008em]">{text}</p>
+      <p className="text-[10px] font-montserrat font-medium uppercase tracking-[0.2em] text-[#C9B99B]">Step {step}</p>
+      <p className="mt-1 text-sm font-montserrat font-medium uppercase tracking-[0.08em] text-[#F9F7F2]">{title}</p>
+      <p className="mt-1.5 text-[10px] md:text-xs text-[#F9F7F2]/84 leading-relaxed font-montserrat font-medium uppercase tracking-[0.1em]">{text}</p>
     </article>
   );
 }
@@ -304,7 +304,7 @@ function QuickLink({ href, text }: { href: string; text: string }) {
   return (
     <a
       href={href}
-      className="inline-flex items-center justify-center rounded-full border border-[#AFBBC8]/65 bg-[linear-gradient(135deg,#EEF3F8_0%,#D5DEE7_100%)] px-5 py-2 text-[10px] font-[var(--font-lexend)] font-black uppercase tracking-[0.17em] text-[#1F2C3C] hover:brightness-105 transition-all shadow-[0_10px_18px_-14px_rgba(0,0,0,0.95)]"
+      className="inline-flex items-center justify-center rounded-full border border-[#AFBBC8]/65 bg-[linear-gradient(135deg,#EEF3F8_0%,#D5DEE7_100%)] px-5 py-2 text-[10px] font-montserrat font-medium uppercase tracking-[0.1em] text-[#1F2C3C] hover:brightness-105 transition-all shadow-[0_10px_18px_-14px_rgba(0,0,0,0.95)]"
     >
       {text}
     </a>
@@ -333,12 +333,12 @@ function PassCard({
       <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(85%_100%_at_0%_0%,rgba(243,232,218,0.14)_0%,transparent_58%)]" />
       <div className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(120deg,transparent_0%,rgba(231,199,151,0.07)_42%,transparent_79%)] opacity-80 group-hover:opacity-100 transition-opacity" />
       {badge ? (
-        <span className="absolute right-4 top-4 rounded-full border border-[#E7C697]/70 bg-[linear-gradient(135deg,#FAE9CF_0%,#EBC28E_100%)] px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.15em] text-[#3D2B1C] shadow-[0_10px_24px_-16px_rgba(0,0,0,0.95)]">
+        <span className="absolute right-4 top-4 rounded-full border border-[#C9B99B]/70 bg-[linear-gradient(135deg,#E9E1D4_0%,#C9B99B_100%)] px-2.5 py-1 text-[10px] font-montserrat font-medium uppercase tracking-[0.15em] text-[#111820] shadow-[0_10px_24px_-16px_rgba(0,0,0,0.95)]">
           {badge}
         </span>
       ) : null}
-      <h4 className="relative z-10 text-2xl font-black uppercase tracking-tight text-[#F6EBDD]">{title}</h4>
-      <p className="relative z-10 mt-3 text-3xl font-black text-[#F7E2C1]">{price} <span className="text-sm text-[#F3E8DA]/75">{vat}</span></p>
+      <h4 className="relative z-10 text-2xl font-bebas font-normal uppercase tracking-widest text-[#F9F7F2]">{title}</h4>
+      <p className="relative z-10 mt-3 text-3xl font-bebas font-normal tracking-widest uppercase text-[#E9E1D4]">{price} <span className="text-sm text-[#F9F7F2]/75">{vat}</span></p>
       <ul className="relative z-10 mt-5 space-y-2">
         {features.map((feature) => (
           <Feature key={feature} text={feature} tone="light" />
@@ -368,9 +368,9 @@ function CompetitionCard({
     <article className="relative overflow-hidden rounded-2xl border border-[#6F7D8A]/50 bg-[linear-gradient(145deg,#1A242D_0%,#141D25_52%,#0F161D_100%)] p-7 shadow-[0_32px_80px_-38px_rgba(0,0,0,0.98)]">
       <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(85%_100%_at_0%_0%,rgba(243,232,218,0.14)_0%,transparent_58%)]" />
       <div className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(120deg,transparent_0%,rgba(231,199,151,0.07)_42%,transparent_79%)]" />
-      <h4 className="relative z-10 text-2xl font-black uppercase tracking-tight text-[#F6EBDD]">{title}</h4>
-      <p className="relative z-10 mt-3 text-4xl font-black text-[#F7E2C1]">{price} <span className="text-sm text-[#F3E8DA]/75">+ VAT</span></p>
-      <p className="relative z-10 mt-4 text-sm text-[#F3E8DA]/84 leading-relaxed">{note}</p>
+      <h4 className="relative z-10 text-2xl font-bebas font-normal uppercase tracking-widest text-[#F9F7F2]">{title}</h4>
+      <p className="relative z-10 mt-3 text-4xl font-bebas font-normal tracking-widest uppercase text-[#E9E1D4]">{price} <span className="text-sm text-[#F9F7F2]/75">+ VAT</span></p>
+      <p className="relative z-10 mt-4 text-xs md:text-sm text-[#F9F7F2]/84 leading-relaxed font-montserrat font-medium uppercase tracking-[0.1em]">{note}</p>
       <div className="relative z-10 mt-6">
         <BuyButton href={href} text={ctaText ?? "Enter Championship Now"} />
       </div>
@@ -382,10 +382,10 @@ function Feature({ text, tone = "dark" }: { text: string; tone?: "dark" | "light
   const isLight = tone === "light";
   return (
     <li className={[
-      "flex items-start gap-3 text-sm font-[var(--font-lexend)] font-medium tracking-[-0.008em]",
-      isLight ? "text-[#F3E8DA]/92" : "text-[#F3E8DA]/92",
+      "flex items-start gap-3 text-xs md:text-sm font-montserrat font-medium uppercase tracking-[0.1em]",
+      isLight ? "text-[#F9F7F2]/92" : "text-[#F9F7F2]/92",
     ].join(" ")}>
-      <span className={["mt-2 h-1.5 w-1.5 rounded-full", isLight ? "bg-[#E7C697]" : "bg-[#E7C697]"].join(" ")} />
+      <span className={["mt-2 h-1.5 w-1.5 rounded-full", isLight ? "bg-[#C9B99B]" : "bg-[#C9B99B]"].join(" ")} />
       <span>{text}</span>
     </li>
   );

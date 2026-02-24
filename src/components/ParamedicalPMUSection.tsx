@@ -1,137 +1,186 @@
 "use client";
 
 import React from "react";
-import { Check } from "lucide-react";
 
 export function ParamedicalPMUSection() {
     return (
-        <section id="paramedical" className="relative overflow-hidden py-24 md:py-36 bg-[#4A3724] text-[#F0D7B4]">
-            <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,#9A6C3D_0%,#A97844_26%,#BC8750_58%,#E0AE72_100%)]" />
-                <div className="absolute inset-0 opacity-[0.2] bg-[radial-gradient(rgba(255,233,194,0.28)_0.85px,transparent_1px)] bg-[size:3px_3px]" />
-                <div className="absolute inset-0 opacity-[0.16] bg-[repeating-linear-gradient(168deg,rgba(255,228,182,0.2)_0px,rgba(255,228,182,0.2)_2px,transparent_13px,transparent_30px)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_16%_12%,rgba(122,92,68,0.26),transparent_60%),radial-gradient(1000px_circle_at_84%_82%,rgba(168,94,54,0.20),transparent_62%)]" />
-                <div className="absolute inset-0 bg-[linear-gradient(112deg,rgba(255,255,255,0.09)_0%,rgba(255,255,255,0)_38%,rgba(255,255,255,0.06)_72%,rgba(255,255,255,0)_100%)]" />
-                <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,rgba(255,255,255,0.85)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.85)_1px,transparent_1px)] bg-[size:82px_82px]" />
-                <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[70%] h-40 bg-[radial-gradient(50%_100%_at_50%_100%,rgba(255,230,182,0.38),transparent)] blur-2xl" />
-                <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[70%] h-40 bg-[radial-gradient(50%_100%_at_50%_0%,rgba(168,94,54,0.22),transparent)] blur-2xl" />
+        <section id="paramedical" className="relative w-full overflow-hidden bg-[#141C24] text-[#E9E1D4] py-24 md:py-32">
+
+            {/* --- BACKGROUND LAYERS (Elegant Deep Blue & Gold) --- */}
+            <div className="absolute inset-0 pointer-events-none select-none">
+
+                {/* 1. Base: Deep Blue Gradient (Original Palette) */}
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,#0F161C_0%,#1B2A36_50%,#101820_100%)]" />
+
+                {/* 2. Subtle Texture (Noise instead of lines) */}
+                <div className="absolute inset-0 opacity-[0.05] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iMC41IiByZXN1bHQ9ImIiLz48ZmVDb2xvck1hdHJpeCBpbj0iYiIgdHlwZT0ibWF0cml4IiB2YWxHVZz0iMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIiByZXN1bHQ9ImMiLz48L2ZpbHRlcj48cmVjdCB3aWRHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZmZmIiBmaWx0ZXI9InVybCgjbnUpIiBvcGFjaXR5PSIwLjI1Ii8+PC9zdmc+')]" />
+
+                {/* 3. Elegant Lighting (Warm Gold Glow & Cool Blue) */}
+                <div className="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(201,185,155,0.08),transparent_70%)] blur-[100px]" />
+                <div className="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(94,115,133,0.1),transparent_70%)] blur-[100px]" />
+
+                {/* 4. Vignette for depth */}
+                <div className="absolute inset-0 bg-[radial-gradient(transparent_0%,rgba(0,0,0,0.6)_100%)]" />
             </div>
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8">
-                <header className="relative text-center max-w-4xl mx-auto rounded-3xl px-4 py-5 md:px-8 md:py-9">
-                    <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(95%_120%_at_50%_30%,rgba(35,26,20,0.42)_0%,rgba(28,20,15,0.2)_45%,rgba(28,20,15,0)_100%)]" />
-                    <p className="relative text-[11px] tracking-[0.7em] uppercase font-black text-[#FFE2B5] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">Exclusive Clinical Format</p>
-                    <h2 className="relative mt-6 text-5xl md:text-7xl font-black uppercase tracking-tight leading-[0.9] text-[#FFF0DA] drop-shadow-[0_6px_18px_rgba(0,0,0,0.45)]">
-                        The Clinical Lounge
-                    </h2>
-                    <div className="mx-auto mt-6 h-px w-28 bg-gradient-to-r from-transparent via-[#6B4F3B] to-transparent" />
-                    <p className="relative mt-8 text-xl md:text-2xl text-[#F2E2CB] leading-relaxed drop-shadow-[0_3px_10px_rgba(0,0,0,0.28)] font-[var(--font-lexend)] font-medium tracking-[-0.01em]">
-                        Where clinical excellence meets paramedical micropigmentation.
-                    </p>
-                </header>
+            {/* --- CONTENT --- */}
+            <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
 
-                <LoungePanel className="mt-16 text-center">
-                    <p className="text-[11px] tracking-[0.35em] uppercase font-black text-[#E2B37B]">The Concept</p>
-                    <h3 className="mt-5 text-3xl md:text-4xl font-black uppercase tracking-tight text-[#FFF0DA]">An Exclusive High-Level Forum</h3>
-                    <p className="mt-6 text-lg md:text-xl leading-relaxed text-[#E9D1AE]/92 max-w-3xl mx-auto">
-                        A premium clinical roundtable for paramedical experts.
-                    </p>
-                    <div className="mt-7 flex flex-wrap justify-center gap-3">
-                        <StatPill text="2-Hour Expert Forum" />
-                        <StatPill text="6 Selected Specialists" />
-                        <StatPill text="Live Moderated Exchange" />
+                {/* HEADER */}
+                <div className="flex flex-col md:flex-row items-center justify-between mb-20 gap-8">
+                    <div className="text-center md:text-left space-y-2 relative">
+                        {/* Gold Accent Bar */}
+                        <div className="hidden md:block absolute -left-6 top-2 w-1 h-20 bg-gradient-to-b from-[#C9B99B] to-transparent opacity-60" />
+
+                        <h3 className="uppercase font-montserrat font-medium tracking-widest text-[#C9B99B] text-[10px] md:text-xs mb-4">
+                            High Precision Forum
+                        </h3>
+                        <h2 className="text-6xl md:text-8xl font-bebas text-[#F9F7F2] tracking-widest leading-[0.9] drop-shadow-2xl uppercase">
+                            THE CLINICAL <br />
+                            {/* Outline Text */}
+                            <span
+                                className="text-transparent"
+                                style={{ WebkitTextStroke: "1.5px #F9F7F2" }}
+                            >
+                                LOUNGE
+                            </span>
+                        </h2>
                     </div>
-                    <p className="mt-6 text-sm md:text-base uppercase tracking-[0.15em] font-black text-[#F1C58E]">
-                        Not a demo. Not a solo lecture.
-                    </p>
-                </LoungePanel>
-
-                <div className="mt-8 grid lg:grid-cols-2 gap-8">
-                    <LoungePanel>
-                        <p className="text-[11px] tracking-[0.32em] uppercase font-black text-[#E2B37B]">Structure & Topics</p>
-                        <h4 className="mt-4 text-2xl font-black uppercase tracking-tight text-[#FFF0DA]">Format</h4>
-                        <ul className="mt-5 space-y-2.5">
-                            <ListLine text="2-hour moderated discussion" />
-                            <ListLine text="6 selected experts only" />
-                            <ListLine text="Live professional exchange" />
-                            <ListLine text="Audience interaction segment" />
-                            <ListLine text="Premium lounge stage setup" />
-                        </ul>
-                    </LoungePanel>
-
-                    <LoungePanel>
-                        <p className="text-[11px] tracking-[0.32em] uppercase font-black text-[#E2B37B]">Structure & Topics</p>
-                        <h4 className="mt-4 text-2xl font-black uppercase tracking-tight text-[#FFF0DA]">Key Topics</h4>
-                        <ul className="mt-5 grid sm:grid-cols-2 gap-x-5 gap-y-2.5">
-                            <ListLine text="Scar camouflage" />
-                            <ListLine text="Areola restoration" />
-                            <ListLine text="Post-surgical pigmentation" />
-                            <ListLine text="Complex clinical cases" />
-                            <ListLine text="Advanced safety & protocols" />
-                            <ListLine text="Ethics and international standards" />
-                        </ul>
-                    </LoungePanel>
+                    <GoldBoxLogo />
                 </div>
 
-                <LoungePanel className="mt-8">
-                    <p className="text-[11px] tracking-[0.35em] uppercase font-black text-[#E2B37B] text-center">Strategic Value For Participants</p>
-                    <div className="mt-6 grid md:grid-cols-2 gap-4">
-                        <ValueItem text="Positioning yourself as a clinical authority" />
-                        <ValueItem text="Gaining visibility within an international audience" />
-                        <ValueItem text="Being associated with a high-level professional platform" />
-                        <ValueItem text="Strengthening your personal and professional brand" />
-                    </div>
-                    <p className="mt-6 text-center text-sm md:text-base uppercase tracking-[0.14em] font-black text-[#F1C58E]">
-                        This forum is designed not only to educate, but to elevate.
-                    </p>
-                </LoungePanel>
+                {/* MAIN GRID LAYOUT (Structure Maintained) */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
-                <div className="relative mt-12 rounded-3xl border border-[#6B4F3B]/55 bg-[linear-gradient(135deg,#2B231E_0%,#332A23_45%,#231C18_100%)] px-8 py-10 text-center shadow-[0_40px_110px_-55px_rgba(12,8,6,0.9)] overflow-hidden">
-                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(110deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0)_45%,rgba(168,94,54,0.14)_100%)]" />
-                    <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-[radial-gradient(50%_100%_at_50%_100%,rgba(122,92,68,0.2),transparent)]" />
-                    <p className="text-[11px] tracking-[0.28em] uppercase font-black text-[#A85E36]">
-                        Participation Investment
-                    </p>
-                    <p className="mt-5 text-4xl md:text-5xl font-black text-[#CBA785]">€1,500 + applicable taxes</p>
-                    <p className="mt-3 text-[#CBA785]/72 uppercase tracking-[0.15em] text-xs md:text-sm">50% advance · non-refundable reservation</p>
-                    <p className="mt-6 text-sm md:text-base leading-relaxed text-[#DDBD96]/85 max-w-4xl mx-auto">
-                        Includes participation in the exclusive Clinical Lounge talk, social media promotion, recognition plaque/trophy,
-                        and access to key congress days with coffee and meal breaks.
-                    </p>
+                    {/* LEFT COLUMN: Concept (Glass Panel - Blue/Gold edition) */}
+                    <div className="lg:col-span-7 flex flex-col gap-6">
+
+                        <div className="h-full bg-[#1B2A36]/50 backdrop-blur-xl border-t border-l border-[#C9B99B]/30 border-b border-r border-black/30 p-10 rounded-2xl relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.6)] group">
+
+                            {/* Gold reflection effect on top edge */}
+                            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C9B99B]/50 to-transparent opacity-70" />
+
+                            <div className="space-y-8">
+                                <p className="font-montserrat text-[#F0F4F8] text-[10px] md:text-xs tracking-widest uppercase font-medium leading-relaxed">
+                                    <strong className="text-[#C9B99B]">THE CLINICAL LOUNGE</strong> IS AN EXCLUSIVE SPACE FOR EXPERTS. WHERE CLINICAL EXCELLENCE MEETS PARAMEDICAL MICROPIGMENTATION.
+                                </p>
+
+                                {/* Subtle separator */}
+                                <div className="flex items-center gap-4 opacity-60">
+                                    <div className="h-px flex-1 bg-gradient-to-r from-[#C9B99B]/50 to-transparent" />
+                                    <span className="text-[10px] uppercase tracking-widest font-montserrat text-[#C9B99B]">Exclusive Environment</span>
+                                </div>
+
+                                <p className="font-montserrat text-[#F9F7F2]/80 text-[10px] md:text-xs tracking-widest uppercase font-medium leading-relaxed">
+                                    NOT A DEMONSTRATION. NOT A LECTURE. A CURATED EXPERT DISCUSSION DESIGNED FOR DEPTH, CREDIBILITY, AND PRECISION.
+                                </p>
+                            </div>
+
+                            <div className="mt-10 pt-6 border-t border-[#C9B99B]/20 flex flex-col md:flex-row md:items-center gap-4">
+                                <span className="font-bebas text-[#E9E1D4] text-2xl tracking-widest uppercase opacity-90">VITAL METRICS:</span>
+                                <div className="flex flex-wrap gap-4 text-[10px] font-montserrat text-[#C9B99B] uppercase tracking-widest font-medium">
+                                    <span>RECOGNITION</span>
+                                    <span className="text-[#5E7385]">•</span>
+                                    <span>Visibility</span>
+                                    <span className="text-[#5E7385]">•</span>
+                                    <span>Respect</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* RIGHT COLUMN: Agenda (Dark Blue Panel) */}
+                    <div className="lg:col-span-5 flex flex-col gap-6">
+                        <div className="h-full bg-[#121A21] border border-[#1B2A36] p-8 rounded-2xl relative overflow-hidden shadow-lg">
+
+                            <h4 className="font-bebas text-4xl text-[#F9F7F2] tracking-widest uppercase mb-8 flex items-center gap-4">
+                                {/* Precision Surgical Dot */}
+                                <span className="relative flex h-3 w-3">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C9B99B] opacity-40"></span>
+                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-[#C9B99B]"></span>
+                                </span>
+                                CLINICAL AGENDA
+                            </h4>
+
+                            <ul className="space-y-6">
+                                {[
+                                    "Scar Camouflage",
+                                    "Areola Restoration",
+                                    "Post-Surgical Pigmentation",
+                                    "Clinical Cases & Protocols",
+                                    "Ethics & Excellence"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center group">
+                                        {/* Precision Surgical Diamond */}
+                                        <svg className="w-3 h-3 text-[#C9B99B] mr-4 shrink-0 transition-transform group-hover:scale-125 duration-300" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2L22 12L12 22L2 12L12 2Z" />
+                                        </svg>
+                                        <span className="font-montserrat text-[#E9E1D4]/90 font-medium text-[10px] md:text-xs tracking-widest uppercase group-hover:text-white transition-colors">
+                                            {item}
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <div className="mt-12 p-5 rounded-lg bg-[#18232C] border-l-[3px] border-[#C9B99B]/70 relative">
+                                {/* Subtle gold glow behind the quote box */}
+                                <p className="font-montserrat text-[#F9F7F2]/80 text-[10px] md:text-xs uppercase tracking-widest font-medium leading-relaxed">
+                                    "HEALING IS PRECISION, KNOWLEDGE AND <strong className="text-[#C9B99B] font-bold">RESPONSIBILITY</strong>."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                {/* FOOTER: Investment (Blue & Gold Bar) */}
+                <div className="mt-10 bg-gradient-to-r from-[#1B2A36] via-[#C9B99B]/30 to-[#1B2A36] p-[1px] rounded-lg shadow-[0_10px_30px_-5px_rgba(0,0,0,0.5)]">
+                    <div className="bg-[#141C24] rounded-lg p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
+                        {/* Subtle noise overlay in footer */}
+                        <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iMC41IiByZXN1bHQ9ImIiLz48ZmVDb2xvck1hdHJpeCBpbj0iYiIgdHlwZT0ibWF0cml4IiB2YWxHVZz0iMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIiByZXN1bHQ9ImMiLz48L2ZpbHRlcj48cmVjdCB3aWRHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZmZmIiBmaWx0ZXI9InVybCgjbnUpIiBvcGFjaXR5PSIwLjI1Ii8+PC9zdmc+')]" />
+
+                        <div className="text-center lg:text-left relative z-10">
+                            <p className="text-[#C9B99B] uppercase tracking-[0.2em] text-[10px] font-montserrat font-medium mb-2">
+                                ACCESS GRANT
+                            </p>
+                            <div className="flex items-baseline gap-2 justify-center lg:justify-start">
+                                <span className="font-bebas text-5xl text-[#F9F7F2]">€1,500</span>
+                                <span className="font-montserrat text-[#F9F7F2]/50 text-xs uppercase">+ VAT</span>
+                            </div>
+                        </div>
+
+                        <div className="hidden lg:block h-12 w-px bg-[#5E7385]/30" />
+
+                        <div className="max-w-xl text-center lg:text-left relative z-10">
+                            <p className="text-[#F9F7F2]/80 text-[10px] md:text-xs tracking-widest uppercase font-medium font-montserrat leading-relaxed">
+                                INCLUDES EXCLUSIVE CLINICAL LOUNGE ACCESS, RECOGNITION PLAQUE, AND FULL CONGRESS ENTRY.
+                            </p>
+                        </div>
+
+                        <div className="relative z-10">
+                            <a
+                                href="https://link.fastpaydirect.com/payment-link/699e2d87e0aef97d62a161c6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-8 py-4 bg-[#C9B99B] hover:bg-[#F9F7F2] text-[#141C24] font-montserrat font-medium uppercase tracking-[0.2em] text-[10px] md:text-xs transition-colors duration-300"
+                            >
+                                SECURE ACCESS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     );
 }
 
-function LoungePanel({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+function GoldBoxLogo() {
     return (
-        <article className={`group relative rounded-2xl border border-[#8A643F]/45 bg-[linear-gradient(145deg,#3A2D22_0%,#30261E_100%)] p-7 md:p-8 backdrop-blur-sm transition-all duration-500 hover:border-[#D08B4B]/70 hover:shadow-[0_28px_80px_-45px_rgba(34,21,12,0.75)] overflow-hidden ${className}`}>
-            <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_15%_10%,rgba(168,94,54,0.16),transparent_50%)]" />
-            <div className="relative z-10">{children}</div>
-        </article>
-    );
-}
-
-function ListLine({ text }: { text: string }) {
-    return (
-        <li className="text-sm md:text-[15px] uppercase tracking-[0.06em] text-[#E8D0AE]/94 font-black">{text}</li>
-    );
-}
-
-function ValueItem({ text }: { text: string }) {
-    return (
-        <div className="flex items-start gap-3 rounded-xl border border-[#8A643F]/42 bg-[#362A21]/74 px-4 py-3">
-            <Check className="mt-0.5 text-[#F0C98F] shrink-0" size={16} />
-            <p className="text-sm md:text-base text-[#E9D1AE]/90 leading-relaxed font-[var(--font-lexend)] font-medium">{text}</p>
+        <div className="relative shrink-0 w-24 h-24 flex flex-col items-center justify-center border border-[#C9B99B] bg-[#141C24] shadow-[0_0_20px_rgba(201,185,155,0.1)]">
+            <div className="absolute inset-1 border border-[#C9B99B]/30" />
+            <span className="uppercase font-montserrat font-bold tracking-widest text-[#C9B99B] text-[8px] leading-loose text-center">
+                The<br />Beauty<br />Experts
+            </span>
         </div>
-    );
-}
-
-function StatPill({ text }: { text: string }) {
-    return (
-        <span className="rounded-full border border-[#946A43]/62 bg-[#3A2C21]/72 px-4 py-2 text-[11px] md:text-xs uppercase tracking-[0.15em] font-black text-[#FFD7A2]">
-            {text}
-        </span>
     );
 }

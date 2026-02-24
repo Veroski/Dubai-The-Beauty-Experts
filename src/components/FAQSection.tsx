@@ -2,8 +2,8 @@
 
 import React from "react";
 
-const GOLD = "#C9A24A";
-const INK = "#241D12";
+const GOLD = "#C9B99B";
+const INK = "#111820";
 
 type FAQItem = {
   q: string;
@@ -101,14 +101,14 @@ export function FAQSection() {
 
       <div className="relative mx-auto max-w-4xl px-6">
         <header className="mx-auto max-w-3xl text-center">
-          <div className="text-[13px] tracking-[0.4em] uppercase font-bold text-[#E7C697]">
+          <div className="text-[13px] tracking-[0.2em] font-montserrat font-medium uppercase text-[#C9B99B]">
             Frequently Asked Questions
           </div>
-          <h2 className="mt-4 text-4xl md:text-5xl font-light tracking-tight text-[#F6EBDD]">
+          <h2 className="mt-4 text-4xl md:text-5xl font-bebas font-normal tracking-widest uppercase text-[#F9F7F2]">
             Everything you need to know about <br />
-            <span className="font-serif italic text-[#E7C697]">The Beauty Experts Dubai</span>
+            <span className="font-bebas font-normal text-[#C9B99B]">The Beauty Experts Dubai</span>
           </h2>
-          <div className="mt-8 h-px w-20 mx-auto bg-[#E7C697]/35" />
+          <div className="mt-8 h-px w-20 mx-auto bg-[#C9B99B]/35" />
         </header>
 
         <div className="mt-16 space-y-4">
@@ -118,7 +118,7 @@ export function FAQSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-sm text-[#F3E8DA]/70 uppercase tracking-widest font-medium">
+          <p className="text-sm text-[#F9F7F2]/70 uppercase tracking-[0.1em] font-montserrat font-medium">
             Arjaan by Rotana Media City · October 15–17, 2026
           </p>
         </div>
@@ -129,17 +129,17 @@ export function FAQSection() {
 
 function FAQRow({ item }: { item: FAQItem }) {
   return (
-    <details className="group border border-[#6F7D8A]/40 bg-[linear-gradient(145deg,#1A242D_0%,#141D25_52%,#0F161D_100%)] backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#E7C697]/55">
+    <details className="group border border-[#6F7D8A]/40 bg-[linear-gradient(145deg,#1A242D_0%,#141D25_52%,#0F161D_100%)] backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#C9B99B]/55">
       <summary className="list-none cursor-pointer p-6 md:p-8 flex items-center justify-between gap-4 select-none">
-        <span className="text-lg md:text-xl font-medium text-[#F6EBDD] pr-4">
+        <span className="text-lg md:text-xl font-montserrat font-medium text-[#F9F7F2] pr-4">
           {item.q}
         </span>
         <div className="relative flex-shrink-0 w-6 h-6">
-          <div className="absolute inset-0 bg-[#E7C697] rotate-90 group-open:rotate-180 transition-transform duration-300 h-[2px] w-6 top-1/2 -translate-y-1/2" />
-          <div className="absolute inset-0 bg-[#E7C697] group-open:opacity-0 transition-opacity duration-300 h-6 w-[2px] left-1/2 -translate-x-1/2" />
+          <div className="absolute inset-0 bg-[#C9B99B] rotate-90 group-open:rotate-180 transition-transform duration-300 h-[2px] w-6 top-1/2 -translate-y-1/2" />
+          <div className="absolute inset-0 bg-[#C9B99B] group-open:opacity-0 transition-opacity duration-300 h-6 w-[2px] left-1/2 -translate-x-1/2" />
         </div>
       </summary>
-      <div className="px-6 pb-8 md:px-8 md:pb-10 text-[#F3E8DA]/88 leading-relaxed text-base md:text-lg border-t border-[#6F7D8A]/24 pt-4">
+      <div className="px-6 pb-8 md:px-8 md:pb-10 text-[#F9F7F2]/88 leading-relaxed text-xs md:text-sm uppercase font-montserrat font-medium tracking-[0.1em] border-t border-[#6F7D8A]/24 pt-5">
         {item.a}
       </div>
     </details>

@@ -21,7 +21,7 @@ export function FeaturesSection({ scrollY }: FeaturesSectionProps) {
 
     return (
         <section
-            className="relative z-50 px-8 pb-40 bg-gradient-to-b from-[#E6D3A3] via-[#F6EEDB] to-[#FFFFFF] pointer-events-none"
+            className="relative z-50 px-8 pb-40 bg-gradient-to-b from-[#E9E1D4] via-[#F9F7F2] to-[#F9F7F2] pointer-events-none"
             style={{
                 transform: `translateY(-${reverseParallaxOffset}px)`,
                 marginTop: "-40vh", // Solapamiento profundo para transición invisible
@@ -30,7 +30,7 @@ export function FeaturesSection({ scrollY }: FeaturesSectionProps) {
             }}
         >
             <div className="max-w-6xl mx-auto text-center pointer-events-auto">
-                <h2 className="text-5xl font-serif mb-16 italic text-deepPetrol tracking-tight">
+                <h2 className="text-5xl font-bebas font-normal mb-16 text-deepPetrol tracking-widest uppercase">
                     A New Horizon
                 </h2>
 
@@ -38,9 +38,9 @@ export function FeaturesSection({ scrollY }: FeaturesSectionProps) {
                     {[1, 2, 3].map((item) => (
                         <div
                             key={item}
-                            className="group h-80 rounded-3xl bg-white/80 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/20 p-10 backdrop-blur-md transition-transform duration-500 hover:-translate-y-2"
+                            className="group h-80 rounded-3xl bg-[#F9F7F2]/80 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/20 p-10 backdrop-blur-md transition-transform duration-500 hover:-translate-y-2"
                         >
-                            <div className="w-14 h-14 bg-gradient-to-tr from-[#E6D3A3] to-[#B89B5E] rounded-2xl mb-6 rotate-3 group-hover:rotate-12 transition-transform" />
+                            <div className="w-14 h-14 bg-gradient-to-tr from-[#E9E1D4] to-[#C9B99B] rounded-2xl mb-6 rotate-3 group-hover:rotate-12 transition-transform" />
                             <div className="space-y-4">
                                 <div className="h-4 w-2/3 bg-deepPetrol/10 rounded-full" />
                                 <div className="h-3 w-full bg-deepPetrol/5 rounded-full" />

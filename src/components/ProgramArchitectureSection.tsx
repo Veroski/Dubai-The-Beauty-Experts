@@ -35,13 +35,19 @@ export function ProgramArchitectureSection() {
             ref={sectionRef}
             className="relative scroll-mt-28 md:scroll-mt-32 overflow-hidden py-24 md:py-40 w-full"
             style={{
-                background: "linear-gradient(180deg, #3D322B 0%, #312721 46%, #231C18 100%)"
+                background: "linear-gradient(180deg, #E6D4B5 0%, #DDC4A1 46%, #DDC4A1 100%)"
             }}
         >
-            {/* Fondo decorativo */}
+            {/* Fondo decorativo y Textura Desértica */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_18%_14%,rgba(122,92,68,0.22),transparent_58%),radial-gradient(1000px_circle_at_82%_88%,rgba(168,94,54,0.18),transparent_60%)]" />
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(20,14,10,0.18),rgba(12,9,7,0.56))]" />
+                <img
+                    src="/fondo.png"
+                    alt="Desert texture background"
+                    className="w-full h-full object-cover opacity-60 mix-blend-multiply [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
+                />
+                {/* Iluminación tipo sol del desierto */}
+                <div className="absolute inset-0 bg-[radial-gradient(1200px_circle_at_15%_10%,rgba(240,220,185,0.4),transparent_60%),radial-gradient(1200px_circle_at_85%_90%,rgba(184,134,69,0.15),transparent_60%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(230,212,181,0.2),rgba(221,196,161,0.4))]" />
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
@@ -50,14 +56,20 @@ export function ProgramArchitectureSection() {
                     {/* COLUMNA IZQUIERDA: Textos */}
                     <div className="flex flex-col">
                         <header className="mb-8">
-                            <div className="text-[11px] tracking-[0.8em] uppercase font-black text-[#A85E36] opacity-90 mb-6">
-                                EVENT STRUCTURE
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="w-8 h-[2px] bg-[#B88645]"></span>
+                                <div className="text-[12px] tracking-[0.4em] uppercase font-black text-[#1C1714]">
+                                    EVENT STRUCTURE
+                                </div>
                             </div>
 
-                            <h2 className="text-4xl md:text-5xl font-light leading-[1.05] tracking-tight text-[#CBA785] mb-6">
-                                Three Days of Elite <br />
-                                <span className="text-[#CBA785]/75 italic font-serif">
-                                    Congress & Championship in Dubai
+                            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bebas font-normal leading-[0.9] tracking-widest text-[#1C1714] mb-8 uppercase">
+                                THREE DAYS OF ELITE <br />
+                                <span
+                                    className="text-transparent"
+                                    style={{ WebkitTextStroke: "1.5px #1C1714" }}
+                                >
+                                    CONGRESS & CHAMPIONSHIP IN DUBAI
                                 </span>
                             </h2>
 
@@ -66,19 +78,19 @@ export function ProgramArchitectureSection() {
                                 href={googleMapsUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group/venue block pt-6 border-t border-[#6B4F3B]/35 cursor-pointer transition-all duration-300 hover:border-[#A85E36]/50"
+                                className="group/venue block pt-6 border-t border-[#1C1714]/15 cursor-pointer transition-all duration-300 hover:border-[#B88645]/50"
                             >
                                 <div className="flex items-center gap-3 mb-2">
-                                    <span className="w-6 h-[1px] bg-[#A85E36] transition-all duration-500 group-hover/venue:w-12"></span>
-                                    <span className="text-[9px] tracking-[0.4em] text-[#A85E36] uppercase font-bold italic">The Venue</span>
+                                    <span className="w-6 h-[1px] bg-[#B88645] transition-all duration-500 group-hover/venue:w-12 group-hover/venue:bg-[#966b35]"></span>
+                                    <span className="text-[10px] tracking-[0.3em] text-[#B88645] uppercase font-bold italic group-hover/venue:text-[#966b35] transition-colors">The Venue</span>
                                 </div>
-                                <h4 className="text-xl text-[#CBA785] font-light uppercase tracking-wider group-hover/venue:text-[#A85E36] transition-colors flex items-center gap-2">
+                                <h4 className="text-2xl mt-4 font-bebas text-[#1C1714] uppercase tracking-widest group-hover/venue:text-[#382b23] transition-colors flex items-center gap-2">
                                     Arjaan by Rotana
-                                    <svg className="w-3 h-3 opacity-0 -translate-x-2 group-hover/venue:opacity-100 group-hover/venue:translate-x-0 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg className="w-4 h-4 opacity-0 -translate-x-2 group-hover/venue:opacity-100 group-hover/venue:translate-x-0 transition-all text-[#B88645]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                     </svg>
                                 </h4>
-                                <p className="mt-1 text-[#CBA785]/50 group-hover/venue:text-[#CBA785]/80 text-sm tracking-wide leading-relaxed transition-colors">
+                                <p className="mt-2 text-[#4A3B32] group-hover/venue:text-[#1C1714] text-[11px] font-montserrat font-medium uppercase tracking-[0.1em] transition-colors leading-relaxed">
                                     Al Sufouh Complex, Dubai Media City.
                                 </p>
                             </a>
@@ -104,13 +116,13 @@ export function ProgramArchitectureSection() {
                         </div>
 
                         {/* Pricing Reminder — Clean Table Structure */}
-                        
+
                     </div>
 
                     {/* COLUMNA DERECHA: Imagen con Link en el Badge */}
                     <div className="relative flex justify-center md:justify-end min-h-[500px]">
                         <div
-                            className="group relative max-w-lg lg:max-w-2xl w-full transition-transform duration-200 ease-out will-change-transform"
+                            className="group relative w-full max-w-lg lg:max-w-none lg:w-[115%] xl:w-[125%] transition-transform duration-200 ease-out will-change-transform z-10"
                             style={{ transform: `translateY(${parallaxY}px)` }}
                         >
                             {/* Badge Flotante con Link */}
@@ -118,21 +130,37 @@ export function ProgramArchitectureSection() {
                                 href={googleMapsUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="absolute -top-4 -right-2 z-20 bg-[#A85E36] text-[#F3E3D2] px-4 py-3 rounded-sm shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 active:scale-95 cursor-pointer flex flex-col items-start"
+                                className="absolute -top-6 -right-4 md:-top-8 md:-right-6 lg:-right-10 z-20 bg-[#1C1714] text-[#E6D4B5] border border-[#B88645]/40 px-5 py-3 rounded-sm shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 active:scale-95 cursor-pointer flex flex-col items-start hover:shadow-[#B88645]/20"
                             >
-                                <p className="text-[8px] font-black tracking-widest uppercase mb-0.5 opacity-70">Location</p>
-                                <p className="text-[10px] font-serif italic whitespace-nowrap">Arjaan by Rotana, Dubai</p>
+                                <p className="text-[9px] font-black tracking-widest uppercase mb-1 opacity-90 text-[#B88645]">Location</p>
+                                <p className="text-[11px] font-bebas font-normal tracking-widest uppercase italic whitespace-nowrap">Arjaan by Rotana</p>
                             </a>
 
-                            <div className="absolute inset-10 bg-black/80 blur-[60px] translate-y-20 opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
+                            <div className="absolute inset-10 bg-[#B88645] blur-[80px] translate-y-20 opacity-30 group-hover:opacity-50 transition-opacity duration-700" />
 
-                            {/* Solo parallax por scroll, sin tilt 3D en hover */}
-                            <div className="relative overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform-gpu">
+                            {/* Contenedor del panel con fondo desértico premium y bordes */}
+                            <div
+                                className="relative overflow-hidden rounded-xl bg-[#2A1E12] border border-[#B88645]/40 shadow-[0_20px_50px_rgba(28,23,20,0.6)] p-4 md:p-6 lg:p-8 group/card"
+                                style={{
+                                    backgroundImage: `url('/texture.png')`,
+                                    backgroundBlendMode: 'overlay',
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                }}
+                            >
+                                {/* Overlay adicional para oscurecer/uniformizar la textura desértica del fondo y mantener alto contraste */}
+                                <div className="absolute inset-0 bg-[#2A1E12]/80 pointer-events-none" />
 
                                 <img
-                                    src="/structure.svg"
+                                    src="/structure.png"
                                     alt="Program architecture Dubai"
-                                    className="w-full h-auto block object-cover rounded-sm transition-all duration-700"
+                                    className="relative z-10 w-full h-auto block object-contain scale-[1.02] 
+                                    transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] 
+                                    drop-shadow-2xl md:ml-2
+                                    group-hover/card:scale-[1.08] group-hover/card:-translate-y-2 group-hover/card:drop-shadow-[0_25px_35px_rgba(0,0,0,0.6)]"
+                                    style={{
+                                        transformOrigin: "center top",
+                                    }}
                                 />
                             </div>
                         </div>
@@ -147,11 +175,11 @@ export function ProgramArchitectureSection() {
 
 function ContextBlock({ day, title, description }) {
     return (
-        <article className="group relative p-8 rounded-sm bg-white/[0.01] border-l border-[#6B4F3B]/40 hover:border-[#A85E36] transition-all duration-500">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-gradient-to-r from-[#A85E36]/10 to-transparent" />
-            <p className="text-[9px] tracking-[0.4em] uppercase font-bold text-[#A85E36] mb-2">{day}</p>
-            <h3 className="text-2xl font-light text-[#CBA785]/90 group-hover:text-[#CBA785] transition-colors mb-2 italic">{title}</h3>
-            <p className="text-sm leading-relaxed text-[#CBA785]/45 group-hover:text-[#CBA785]/72 transition-colors max-w-sm">{description}</p>
+        <article className="group relative p-8 rounded-sm bg-white/30 backdrop-blur-sm border-l-2 border-[#1C1714]/10 hover:border-[#B88645] transition-all duration-500 shadow-[0_4px_20px_-10px_rgba(28,23,20,0.05)] hover:shadow-[0_10px_30px_-10px_rgba(184,134,69,0.15)] hover:-translate-y-1">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-gradient-to-r from-[#B88645]/5 to-transparent" />
+            <p className="text-[10px] tracking-[0.3em] uppercase font-bold text-[#B88645] mb-2">{day}</p>
+            <h3 className="text-2xl font-bebas font-normal tracking-widest text-[#1C1714] group-hover:text-[#1C1714] transition-colors mb-3 uppercase italic leading-tight">{title}</h3>
+            <p className="text-[10px] md:text-xs leading-relaxed text-[#4A3B32] group-hover:text-[#1C1714] font-montserrat font-medium uppercase tracking-[0.1em] transition-colors max-w-sm">{description}</p>
         </article>
     );
 }
@@ -160,8 +188,8 @@ function PricingRow({ label, detail }: { label: string; detail: string }) {
     return (
         <div className="py-1 group border-b border-white/[0.02] last:border-0">
             <div className="flex flex-col">
-                <span className="text-[13px] font-bold text-[#CBA785]/55 group-hover:text-[#CBA785]/85 transition-colors uppercase tracking-tight">{label}</span>
-                <span className="text-[10px] text-[#CBA785]/30 group-hover:text-[#CBA785]/45 transition-colors italic">{detail}</span>
+                <span className="text-[13px] font-bold text-[#C9B99B]/55 group-hover:text-[#C9B99B]/85 transition-colors uppercase tracking-tight">{label}</span>
+                <span className="text-[10px] text-[#C9B99B]/30 group-hover:text-[#C9B99B]/45 transition-colors italic">{detail}</span>
             </div>
         </div>
     );

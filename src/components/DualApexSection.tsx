@@ -6,68 +6,77 @@ export function DualApexSection() {
     return (
         <section
             id="apex"
-            className="relative overflow-hidden py-24 md:py-32 bg-[#1A1A1A]"
+            className="relative overflow-hidden py-24 md:py-32 bg-[#0B1218]"
         >
+            {/* Vectorized Background & Lighting */}
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute inset-x-0 top-0 h-28 bg-[linear-gradient(180deg,#E0AE72_0%,rgba(224,174,114,0)_100%)]" />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,#D79F63_0%,#A97848_14%,#7E5C3B_30%,#4A382C_48%,#1F1A17_68%,#171412_100%)]" />
-                <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(rgba(71,48,28,0.32)_0.85px,transparent_1px)] bg-[size:3px_3px]" />
-                <div className="absolute inset-0 opacity-[0.12] bg-[repeating-linear-gradient(166deg,rgba(230,188,132,0.16)_0px,rgba(230,188,132,0.16)_2px,transparent_14px,transparent_30px)]" />
-                <div className="absolute -top-6 left-0 right-0 h-20 bg-[radial-gradient(60%_100%_at_50%_100%,rgba(245,214,170,0.26),transparent)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_18%_18%,rgba(122,92,68,0.26),transparent_58%),radial-gradient(1000px_circle_at_84%_82%,rgba(168,94,54,0.2),transparent_62%)]" />
-                <div className="absolute -left-[15%] top-[18%] w-[42%] h-[58%] rounded-[999px] border border-[#8E6A47]/25" />
-                <div className="absolute right-[-18%] top-[8%] w-[48%] h-[68%] rounded-[999px] border border-[#8E6A47]/20" />
-                <div className="absolute inset-0 bg-[linear-gradient(112deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0)_40%,rgba(255,255,255,0.03)_72%,rgba(255,255,255,0)_100%)]" />
-                <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,rgba(255,255,255,0.85)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.85)_1px,transparent_1px)] bg-[size:96px_96px]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,#0B1218_0%,#141C24_100%)]" />
+
+                {/* Custom Vectorized Grid Pattern */}
+                <div className="absolute inset-0 opacity-[0.15]" style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M30 60L60 30L30 0L0 30z' stroke='%23C0C9D4' stroke-width='0.5' stroke-opacity='0.4'/%3E%3C/g%3E%3C/svg%3E")`,
+                    backgroundSize: '80px 80px'
+                }} />
+
+                {/* Silver Lighting / Shine */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(192,201,212,0.15),transparent_70%)]" />
+                <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[radial-gradient(circle_at_bottom_right,rgba(138,153,168,0.1),transparent_60%)]" />
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
                 {/* Header */}
-                <div className="relative mb-20 max-w-5xl mx-auto rounded-3xl px-4 py-6 md:px-8 md:py-10">
-                    <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(95%_120%_at_50%_30%,rgba(34,25,19,0.45)_0%,rgba(24,18,14,0.25)_45%,rgba(24,18,14,0)_100%)]" />
-                    <span className="relative text-[13px] md:text-[14px] tracking-[0.8em] uppercase font-black text-[#F0C892] drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
-                        Exclusive Masterclass
+                <div className="relative mb-24 max-w-5xl mx-auto px-4 py-6 md:px-8 md:py-10">
+                    <span className="relative text-[10px] md:text-xs tracking-widest uppercase font-montserrat font-medium text-[#A3B1C6]">
+                        EXCLUSIVE MASTERCLASS
                     </span>
 
-                    <h2 className="relative mt-8 text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-[#F7E8D2] leading-[0.9] uppercase drop-shadow-[0_5px_16px_rgba(0,0,0,0.42)]">
-                        <span className="italic font-serif text-[#F2B47E]">High-Performance</span> Minds
+                    <h2 className="relative mt-6 text-5xl md:text-7xl lg:text-8xl font-bebas tracking-wide text-[#F0F4F8] leading-[0.9] uppercase drop-shadow-[0_0_30px_rgba(192,201,212,0.2)]">
+                        <span
+                            className="text-transparent"
+                            style={{ WebkitTextStroke: "1px #F0F4F8" }}
+                        >
+                            HIGH-PERFORMANCE
+                        </span>{" "}
+                        <br className="hidden md:block" />
+                        MINDS
                     </h2>
 
-                    <p className="relative mt-8 text-xl md:text-2xl text-[#F4E7D3] max-w-2xl mx-auto font-serif italic font-semibold leading-relaxed tracking-[-0.01em] drop-shadow-[0_3px_10px_rgba(0,0,0,0.35)]">
-                        Beyond technique lies the mindset behind iconic results.
-                        Two world-class mentors revealed exclusively for the Dubai championship week to elevate your peak performance.
+                    <p className="relative mt-8 text-[10px] md:text-xs text-[#A3B1C6] max-w-2xl mx-auto font-montserrat tracking-[0.2em] uppercase font-medium leading-relaxed">
+                        BEYOND TECHNIQUE LIES THE MINDSET BEHIND ICONIC RESULTS. <br className="hidden md:block" />
+                        TWO WORLD-CLASS MENTORS REVEALED EXCLUSIVELY FOR THE DUBAI CHAMPIONSHIP WEEK TO ELEVATE YOUR PEAK PERFORMANCE.
                     </p>
                 </div>
 
                 {/* Dual Floating Mystery Cards */}
-                <div className="grid md:grid-cols-2 gap-12 md:gap-20 max-w-5xl mx-auto">
+                <div className="grid md:grid-cols-2 gap-12 md:gap-20 max-w-5xl mx-auto relative z-20">
                     {/* Card 1: Tactical/Business Mind */}
                     <MysteryCard
-                        label="Strategic Authority"
-                        sublabel="Business Mindset & Scaling"
+                        label="STRATEGIC AUTHORITY"
+                        sublabel="BUSINESS MINDSET & SCALING"
                         delay="0s"
+                        accentColor="#B0C4DE"
                     />
 
                     {/* Card 2: Performance/Mental Focus */}
                     <MysteryCard
-                        label="Peak Performance"
-                        sublabel="High-Stakes Mental Architecture"
+                        label="PEAK PERFORMANCE"
+                        sublabel="HIGH-STAKES MENTAL ARCHITECTURE"
                         delay="0.5s"
-                        accentColor="#E2B0A3"
+                        accentColor="#E6EBEF"
                     />
                 </div>
 
                 {/* Concept Tags */}
-                <div className="mt-24 flex flex-wrap justify-center gap-10 md:gap-16">
-                    <ConceptItem text="High-Stakes Focus" color="#A85E36" />
-                    <ConceptItem text="Global Authority" color="#CBA785" />
-                    <ConceptItem text="Mindset Architecture" color="#6B4F3B" />
+                <div className="mt-32 flex flex-wrap justify-center gap-10 md:gap-16">
+                    <ConceptItem text="HIGH-STAKES FOCUS" />
+                    <ConceptItem text="GLOBAL AUTHORITY" />
+                    <ConceptItem text="MINDSET ARCHITECTURE" />
                 </div>
 
-                {/* Skyline Decor */}
-                <div className="mt-20 flex justify-center">
-                    <div className="w-[820px] max-w-[95vw] opacity-90">
-                        <svg viewBox="0 0 1200 240" className="w-full h-auto" aria-hidden="true">
+                {/* Vectorized Skyline / Wave Decor */}
+                <div className="mt-24 flex justify-center opacity-40 mix-blend-screen pointer-events-none">
+                    <div className="w-[820px] max-w-[95vw]">
+                        <svg viewBox="0 0 1200 240" className="w-full h-auto drop-shadow-[0_0_15px_rgba(192,201,212,0.5)]" aria-hidden="true">
                             <path
                                 d="
                   M0,220 L0,200 L40,200 L40,170 L70,170 L70,210 L95,210 L95,150
@@ -85,10 +94,17 @@ export function DualApexSection() {
                   L1080,220 L1080,155 L1110,155 L1110,220
                   L1200,220 L1200,240 L0,240 Z
                 "
-                                fill="rgba(24,18,14,0.8)"
-                                stroke="rgba(201,162,74,0.35)"
-                                strokeWidth="1"
+                                fill="none"
+                                stroke="url(#silverGrad)"
+                                strokeWidth="2"
                             />
+                            <defs>
+                                <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stopColor="#A3B1C6" stopOpacity="0" />
+                                    <stop offset="50%" stopColor="#F0F4F8" stopOpacity="1" />
+                                    <stop offset="100%" stopColor="#A3B1C6" stopOpacity="0" />
+                                </linearGradient>
+                            </defs>
                         </svg>
                     </div>
                 </div>
@@ -97,49 +113,53 @@ export function DualApexSection() {
             <style jsx global>{`
         @keyframes float {
           0% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-14px) rotate(0.2deg); }
+          50% { transform: translateY(-12px) rotate(0.5deg); }
           100% { transform: translateY(0px) rotate(0deg); }
         }
         .animate-float {
-          animation: float 5.2s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
         }
       `}</style>
         </section>
     );
 }
 
-function MysteryCard({ label, sublabel, delay, accentColor = "#C9A24A" }: { label: string, sublabel: string, delay: string, accentColor?: string }) {
+function MysteryCard({ label, sublabel, delay, accentColor = "#C0C9D4" }: { label: string, sublabel: string, delay: string, accentColor?: string }) {
     return (
         <div className="relative mx-auto w-full max-w-[340px] aspect-[3/4]">
+            {/* Ambient Silver Glow */}
             <div
-                className="absolute inset-0 blur-[100px] rounded-full opacity-40 transition-colors duration-1000"
+                className="absolute inset-0 blur-[80px] rounded-full opacity-40 transition-colors duration-1000"
                 style={{ backgroundColor: accentColor }}
             />
 
             <div className="relative h-full w-full animate-float" style={{ animationDelay: delay }}>
-                <div className="h-full w-full bg-[linear-gradient(160deg,#2A221D_0%,#231C18_58%,#1A1512_100%)] backdrop-blur-2xl rounded-[2.5rem] border border-[#8E6A47]/30 ring-1 ring-[#A85E36]/20 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.65)] overflow-hidden flex flex-col items-center justify-center">
-                    <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.08)_0%,transparent_48%,rgba(168,94,54,0.15)_100%)]" />
-                    <div className="absolute inset-0 opacity-[0.12] bg-[radial-gradient(rgba(255,230,190,0.22)_0.75px,transparent_1px)] bg-[size:3px_3px]" />
+                {/* Silver Glassmorphism Card */}
+                <div className="h-full w-full bg-[#141C24]/80 backdrop-blur-xl rounded-[2.5rem] border border-[#C0C9D4]/40 ring-1 ring-white/10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col items-center justify-center group transition-all duration-500 hover:border-white/60 hover:shadow-[0_0_40px_rgba(192,201,212,0.3)]">
+
+                    {/* Metallic Surface Reflection */}
+                    <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.15)_0%,transparent_48%,rgba(163,177,198,0.05)_100%)]" />
 
                     <div className="relative w-full h-full flex flex-col items-center justify-center">
-                        <div className="relative w-56 h-72 opacity-80 filter drop-shadow(0 20px 30px rgba(180,139,42,0.1))">
-                            <div className="absolute top-8 left-1/2 -translate-x-1/2 w-28 h-28 bg-[#EDE6D8] rounded-full ring-1 ring-[#C9A24A]/18 shadow-[inset_0_0_20px_rgba(201,162,74,0.25)]" />
-                            <div className="absolute top-32 left-1/2 -translate-x-1/2 w-56 h-56 bg-[#EDE6D8] rounded-t-[100px] ring-1 ring-[#C9A24A]/10 shadow-[inset_0_0_30px_rgba(201,162,74,0.15)]" />
+                        <div className="relative w-56 h-72 opacity-90 filter drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]">
+                            {/* Inner Silhouette Frames */}
+                            <div className="absolute top-8 left-1/2 -translate-x-1/2 w-28 h-28 bg-[#0B1218] rounded-full border border-[#C0C9D4]/30 shadow-[inset_0_0_30px_rgba(255,255,255,0.05)] group-hover:border-[#F0F4F8]/50 transition-colors duration-500" />
+                            <div className="absolute top-32 left-1/2 -translate-x-1/2 w-56 h-56 bg-[#0B1218] rounded-t-[100px] border border-[#C0C9D4]/30 shadow-[inset_0_0_40px_rgba(255,255,255,0.05)] group-hover:border-[#F0F4F8]/50 transition-colors duration-500" />
 
                             <div className="absolute inset-0 flex items-center justify-center pt-8">
-                                <span className="text-8xl font-serif text-transparent bg-clip-text bg-[linear-gradient(135deg,#C9A24A_0%,#F08A32_50%,#B48B2A_100%)] drop-shadow-[0_0_15px_rgba(240,138,50,0.4)] animate-pulse">
+                                <span className="text-8xl font-bebas tracking-widest uppercase text-transparent bg-clip-text bg-[linear-gradient(135deg,#FFFFFF_0%,#A3B1C6_50%,#7E8D9E_100%)] drop-shadow-[0_0_20px_rgba(255,255,255,0.3)] group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-all duration-500">
                                     ?
                                 </span>
                             </div>
                         </div>
                     </div>
 
-                    <div className="absolute bottom-10 w-full px-8">
-                        <div className="w-full py-4 rounded-2xl border border-[#A85E36]/25 bg-[#211A16]/68 backdrop-blur-md">
-                            <p className="text-[11px] tracking-[0.5em] uppercase font-bold text-[#B48B2A]">
+                    <div className="absolute bottom-8 w-full px-6">
+                        <div className="w-full py-5 rounded-2xl border border-[#C0C9D4]/20 bg-[#0B1218]/90 backdrop-blur-md transition-colors duration-500 group-hover:border-[#C0C9D4]/50 group-hover:bg-[#141C24]">
+                            <p className="text-[10px] tracking-widest uppercase font-montserrat font-medium text-[#A3B1C6] group-hover:text-[#F0F4F8] transition-colors">
                                 {label}
                             </p>
-                            <p className="mt-1 text-[12px] text-[#D9C7AA]/85 font-medium">
+                            <p className="mt-2 text-[11px] text-[#F0F4F8] font-montserrat font-medium tracking-widest uppercase opacity-80 group-hover:opacity-100 transition-opacity">
                                 {sublabel}
                             </p>
                         </div>
@@ -150,14 +170,12 @@ function MysteryCard({ label, sublabel, delay, accentColor = "#C9A24A" }: { labe
     );
 }
 
-function ConceptItem({ text, color }: { text: string; color: string }) {
+function ConceptItem({ text }: { text: string }) {
     return (
         <div className="flex flex-col items-center group cursor-default">
-            <div
-                className="h-[2px] w-5 mb-4 transition-all duration-500 group-hover:w-12"
-                style={{ backgroundColor: color, opacity: 0.6 }}
-            />
-            <span className="text-[12px] md:text-[13px] tracking-[0.4em] uppercase font-black text-[#C9B99B]/78 group-hover:text-[#F7F1E5] transition-colors">
+            {/* Silver active line indicator */}
+            <div className="h-[2px] w-4 mb-4 bg-[#A3B1C6] opacity-60 transition-all duration-500 group-hover:w-16 group-hover:bg-[#F0F4F8] group-hover:shadow-[0_0_10px_#F0F4F8]" />
+            <span className="text-[10px] md:text-xs tracking-widest uppercase font-montserrat font-medium text-[#A3B1C6] group-hover:text-[#F0F4F8] transition-colors">
                 {text}
             </span>
         </div>

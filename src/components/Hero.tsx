@@ -143,24 +143,27 @@ export default function Hero() {
                     <div style={text3DStyle} className="[transform-style:preserve-3d]">
                         {/* Event Name - HUGE and PROMINENT */}
                         <div className="mb-6 md:mb-8">
-                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-[linear-gradient(180deg,#F6FAFF_0%,#DCE5F0_32%,#AEBBCB_60%,#F2F7FF_100%)] drop-shadow-[0_12px_30px_rgba(0,0,0,0.58)] leading-[0.9] uppercase">
+                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bebas font-normal tracking-widest uppercase text-[#F9F7F2] drop-shadow-[0_12px_30px_rgba(0,0,0,0.58)] leading-[0.9] px-4">
                                 THE BEAUTY EXPERTS
                             </h1>
-                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-[linear-gradient(180deg,#FFFFFF_0%,#E7EEF8_35%,#B7C4D4_62%,#F4F8FF_100%)] drop-shadow-[0_12px_30px_rgba(0,0,0,0.52)] leading-[0.9] uppercase mt-2">
+                            <h1
+                                className="text-5xl md:text-7xl lg:text-8xl font-bebas font-normal tracking-widest uppercase text-transparent drop-shadow-[0_12px_30px_rgba(0,0,0,0.52)] leading-[0.9] mt-2 px-4"
+                                style={{ WebkitTextStroke: "2.5px #F9F7F2" }}
+                            >
                                 DUBAI
                             </h1>
                         </div>
 
-                        {/* Subtitle - Official naming */}
-                        <p className="text-lg md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-[linear-gradient(180deg,#EEF4FC_0%,#CAD6E5_55%,#9FAFC2_100%)] uppercase tracking-[0.15em] md:tracking-[0.2em] font-bold drop-shadow-[0_8px_18px_rgba(0,0,0,0.52)] mb-4">
-                            International Congress &amp; Championship PMU | SMP
-                        </p>
-
-                        <p className="text-sm md:text-base text-[#EDF3FB]/92 tracking-[0.2em] font-medium drop-shadow-md max-w-3xl mx-auto">
-                            <span className="md:bg-[#7A858E]/32 md:px-4 md:py-2 rounded-sm leading-relaxed [box-decoration-break:clone] [-webkit-box-decoration-break:clone] border-b-2 border-[#B8C6D8]/75 md:border-none">
-                            A PLACE TO WITNES GREATNESS - A PLACE TO BECOME IT
-                            </span>
-                        </p>
+                        {/* Subtitles with Glassmorphism block to ensure visibility */}
+                        <div className="bg-[#111820]/75 backdrop-blur-xl px-8 py-6 rounded-2xl border border-[#F9F7F2]/15 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] max-w-[95vw] md:max-w-2xl mx-auto flex flex-col items-center gap-4">
+                            <p className="text-xs md:text-sm lg:text-base text-[#F9F7F2] uppercase tracking-widest font-bebas font-normal drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] text-balance">
+                                International Congress &amp; Championship PMU | SMP
+                            </p>
+                            <div className="h-px w-3/4 bg-gradient-to-r from-transparent via-[#C9B99B]/50 to-transparent mx-auto" />
+                            <p className="text-[10px] md:text-xs text-[#C9B99B] tracking-[0.2em] font-montserrat font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-balance uppercase">
+                                A PLACE TO WITNESS GREATNESS - A PLACE TO BECOME IT
+                            </p>
+                        </div>
                     </div>
 
                     {/* CTA (más cerca, menos movimiento) */}

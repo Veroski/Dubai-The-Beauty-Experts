@@ -27,12 +27,12 @@ export function MysteryCoachSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Header */}
         <div className="mb-16">
-          <span className="text-[13px] md:text-[14px] tracking-[0.8em] uppercase font-black text-[#B48B2A]">
+          <span className="text-[13px] md:text-[14px] tracking-[0.8em] uppercase font-black text-[#C9B99B]">
             Exclusive Masterclass
           </span>
 
           <h2 className="mt-6 text-5xl md:text-7xl font-light tracking-tighter text-[#4A4238]">
-            The <span className="italic font-serif text-[#C9A24A]">High-Performance</span> Mind.
+            The <span className="italic font-bebas font-normal tracking-widest uppercase text-[#C9B99B]">High-Performance</span> Mind.
           </h2>
 
           <p className="mt-6 text-xl md:text-2xl text-[#8B7E6D] max-w-xl mx-auto font-light leading-relaxed">
@@ -43,19 +43,19 @@ export function MysteryCoachSection() {
 
         {/* Floating Mystery Card */}
         <div className="relative mx-auto w-full max-w-[380px] aspect-[3/4]">
-          <div className="absolute inset-0 bg-[#E2B0A3]/30 blur-[100px] rounded-full opacity-50" />
+          <div className="absolute inset-0 bg-[#F9F7F2]/30 blur-[100px] rounded-full opacity-50" />
 
           <div className="relative h-full w-full animate-float">
-            <div className="h-full w-full bg-white/40 backdrop-blur-2xl rounded-[2.5rem] border border-white/70 ring-1 ring-[#C9A24A]/20 shadow-[0_40px_80px_-20px_rgba(201,162,74,0.18)] overflow-hidden flex flex-col items-center justify-center border-t-white border-l-white">
+            <div className="h-full w-full bg-[#F9F7F2]/40 backdrop-blur-2xl rounded-[2.5rem] border border-white/70 ring-1 ring-[#C9B99B]/20 shadow-[0_40px_80px_-20px_rgba(201,162,74,0.18)] overflow-hidden flex flex-col items-center justify-center border-t-white border-l-white">
               <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.6)_0%,transparent_50%,rgba(226,176,163,0.1)_100%)]" />
 
               <div className="relative w-full h-full flex flex-col items-center justify-center">
                 <div className="relative w-64 h-80 opacity-80 filter drop-shadow(0 20px 30px rgba(180,139,42,0.1))">
-                  <div className="absolute top-8 left-1/2 -translate-x-1/2 w-32 h-32 bg-[#F9F6F0] rounded-full ring-1 ring-[#C9A24A]/15 shadow-[inset_0_0_20px_rgba(201,162,74,0.25)]" />
-                  <div className="absolute top-36 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#F9F6F0] rounded-t-[120px] ring-1 ring-[#C9A24A]/10 shadow-[inset_0_0_30px_rgba(201,162,74,0.15)]" />
+                  <div className="absolute top-8 left-1/2 -translate-x-1/2 w-32 h-32 bg-[#F9F6F0] rounded-full ring-1 ring-[#C9B99B]/15 shadow-[inset_0_0_20px_rgba(201,162,74,0.25)]" />
+                  <div className="absolute top-36 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#F9F6F0] rounded-t-[120px] ring-1 ring-[#C9B99B]/10 shadow-[inset_0_0_30px_rgba(201,162,74,0.15)]" />
 
                   <div className="absolute inset-0 flex items-center justify-center pt-12">
-                    <span className="text-9xl font-serif text-transparent bg-clip-text bg-[linear-gradient(135deg,#C9A24A_0%,#E2B0A3_50%,#B48B2A_100%)] drop-shadow-[0_0_15px_rgba(226,176,163,0.4)] animate-pulse">
+                    <span className="text-9xl font-bebas font-normal tracking-widest uppercase text-transparent bg-clip-text bg-[linear-gradient(135deg,#C9B99B_0%,#F9F7F2_50%,#C9B99B_100%)] drop-shadow-[0_0_15px_rgba(226,176,163,0.4)] animate-pulse">
                       ?
                     </span>
                   </div>
@@ -63,8 +63,8 @@ export function MysteryCoachSection() {
               </div>
 
               <div className="absolute bottom-10 w-full px-8">
-                <div className="w-full py-4 rounded-2xl border border-[#E2B0A3]/20 bg-white/60 backdrop-blur-md">
-                  <p className="text-[12px] tracking-[0.6em] uppercase font-bold text-[#B48B2A]">
+                <div className="w-full py-4 rounded-2xl border border-[#F9F7F2]/20 bg-[#F9F7F2]/60 backdrop-blur-md">
+                  <p className="text-[12px] tracking-[0.6em] uppercase font-bold text-[#C9B99B]">
                     Coming Soon
                   </p>
                   <p className="mt-1 text-sm text-[#8B7E6D]/60 font-medium">
@@ -78,9 +78,9 @@ export function MysteryCoachSection() {
 
         {/* Concept Tags */}
         <div className="mt-20 flex flex-wrap justify-center gap-10 md:gap-16">
-          <ConceptItem text="Mindset Architecture" color="#C9A24A" />
-          <ConceptItem text="High-Stakes Focus" color="#E2B0A3" />
-          <ConceptItem text="Global Authority" color="#B48B2A" />
+          <ConceptItem text="Mindset Architecture" color="#C9B99B" />
+          <ConceptItem text="High-Stakes Focus" color="#F9F7F2" />
+          <ConceptItem text="Global Authority" color="#C9B99B" />
         </div>
 
         {/* Skyline (NOW in normal flow, below the concept tags) */}

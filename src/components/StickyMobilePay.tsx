@@ -41,19 +41,19 @@ export function StickyMobilePay() {
                 className="
           flex items-center justify-between
           w-full h-16 px-8
-          bg-[#1A150E] text-white
-          rounded-2xl border border-[#C9A24A]/40
-          shadow-[0_20px_40px_rgba(0,0,0,0.4)]
+          bg-[#0B1218]/95 backdrop-blur-md text-[#F0F4F8]
+          rounded-2xl border border-[#A3B1C6]/30
+          shadow-[0_0_15px_rgba(163,177,198,0.15),0_20px_40px_rgba(0,0,0,0.6)]
           active:scale-95 transition-all
         "
             >
                 <div className="flex flex-col">
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#C9A24A]">Dubai 2026</span>
-                    <span className="text-sm font-black uppercase tracking-widest">Get Tickets</span>
+                    <span className="text-[10px] uppercase tracking-[0.1em] font-montserrat font-medium text-[#A3B1C6]">Dubai 2026</span>
+                    <span className="text-sm uppercase tracking-[0.1em] font-montserrat font-medium">Get Tickets</span>
                 </div>
 
                 <div className="flex items-center gap-3">
-                    <ArrowRight size={18} className="text-[#C9A24A]" />
+                    <ArrowRight size={18} className="text-[#A3B1C6]" />
                 </div>
             </a>
         </div>

@@ -146,20 +146,25 @@ export function EventMediaSection() {
       <div className="relative z-10 mx-auto max-w-7xl px-6">
         <header className="relative mx-auto max-w-3xl text-center rounded-3xl px-4 py-5 md:px-8 md:py-8">
           <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(95%_120%_at_50%_30%,rgba(20,27,34,0.56)_0%,rgba(20,27,34,0.26)_45%,rgba(20,27,34,0)_100%)]" />
-          <p className="relative text-[11px] tracking-[0.6em] uppercase font-black text-[#E7C697] drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">Exclusive Events</p>
+          <p className="relative text-[11px] tracking-[0.6em] uppercase font-black text-[#C9B99B] drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">Exclusive Events</p>
           <div className="mx-auto mt-4 h-px w-28 bg-gradient-to-r from-transparent via-[#7A858E]/80 to-transparent" />
-          <h2 className="relative mt-6 text-4xl md:text-6xl font-black uppercase tracking-tight leading-[0.9] text-[#F6EBDD] drop-shadow-[0_6px_16px_rgba(0,0,0,0.45)]">
-            The Beauty Experts
-            <span className="block font-serif italic normal-case text-[#E5A77F] mt-2">Immersive Experience</span>
+          <h2 className="text-5xl md:text-7xl font-bebas font-normal tracking-wide text-[#F9F7F2] uppercase flex flex-col items-center">
+            <span
+              className="text-transparent"
+              style={{ WebkitTextStroke: "1.5px #C9B99B" }}
+            >
+              THE BEAUTY EXPERTS
+            </span>
+            <span className="block font-bebas font-normal tracking-widest uppercase text-[#C9B99B] mt-2">IMMERSIVE EXPERIENCE</span>
           </h2>
-          <p className="relative mt-7 text-base md:text-lg text-[#F3E8DA] leading-relaxed drop-shadow-[0_3px_9px_rgba(0,0,0,0.35)]">
+          <p className="relative mt-7 text-xs md:text-sm text-[#F9F7F2]/90 leading-relaxed font-montserrat font-medium uppercase tracking-[0.1em] drop-shadow-[0_3px_9px_rgba(0,0,0,0.35)]">
             Join the elite of PMU and SMP in a competitive environment where top professionals reveal high-impact techniques,
             strategy, and stage-level execution.
           </p>
         </header>
 
         <div className="relative mt-12 rounded-3xl border border-[#7A858E]/35 bg-[#22282C]/45 p-3 md:p-5 shadow-[0_35px_90px_-45px_rgba(0,0,0,0.55)]">
-          <div className="pointer-events-none absolute -inset-2 rounded-[28px] border border-[#D99C78]/18" />
+          <div className="pointer-events-none absolute -inset-2 rounded-[28px] border border-[#C9B99B]/18" />
           <div className="pointer-events-none absolute -inset-x-6 -bottom-6 h-20 bg-[radial-gradient(50%_80%_at_50%_0%,rgba(217,156,120,0.28),transparent)] blur-xl" />
           <div className="relative w-full overflow-hidden rounded-2xl bg-black aspect-video">
             <iframe
@@ -177,9 +182,9 @@ export function EventMediaSection() {
           <div className="relative mx-auto max-w-4xl rounded-3xl px-4 py-6 md:px-8 md:py-8 text-center">
             <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(95%_120%_at_50%_35%,rgba(17,24,31,0.58)_0%,rgba(17,24,31,0.34)_48%,rgba(17,24,31,0)_100%)]" />
             <h3 className="relative text-3xl md:text-4xl font-black uppercase tracking-tight text-[#FBF2E5] drop-shadow-[0_5px_14px_rgba(0,0,0,0.5)]">
-              Inspiration In <span className="text-[#D99C78]">60 Seconds</span>
+              Inspiration In <span className="text-[#C9B99B]">60 Seconds</span>
             </h3>
-            <p className="relative mt-4 text-[#F2E5D7] max-w-2xl mx-auto font-[var(--font-lexend)] font-normal tracking-[-0.008em] drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)]">
+            <p className="relative mt-4 text-[#F2E5D7]/90 max-w-2xl mx-auto uppercase font-montserrat font-medium tracking-[0.1em] text-xs md:text-sm leading-relaxed drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)]">
               Short capsules with key moments, fast techniques, and high-value takeaways from the event atmosphere.
             </p>
           </div>
@@ -205,7 +210,7 @@ function ShortCard({
   className?: string;
 }) {
   return (
-    <article className={`group relative rounded-2xl border border-[#7A858E]/35 bg-[#22282C]/45 p-2 transition-all duration-500 hover:-translate-y-2 hover:border-[#D99C78]/70 ${className}`}>
+    <article className={`group relative rounded-2xl border border-[#7A858E]/35 bg-[#22282C]/45 p-2 transition-all duration-500 hover:-translate-y-2 hover:border-[#C9B99B]/70 ${className}`}>
       <div className="pointer-events-none absolute -inset-1 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_top,rgba(217,156,120,0.25),transparent_65%)]" />
       <div className="relative w-full overflow-hidden rounded-xl bg-black aspect-[9/16]">
         <div ref={playerRef} className="absolute inset-0 h-full w-full" aria-label={title} />

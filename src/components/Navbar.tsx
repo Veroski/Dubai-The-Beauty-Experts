@@ -48,7 +48,7 @@ export function Navbar() {
             `,
                         backdropFilter: "blur(12px)",
                         borderBottom: isScrolled
-                            ? "1px solid rgba(217,179,95,0.25)"
+                            ? "1px solid rgba(201,185,155,0.25)"
                             : "1px solid rgba(255,255,255,0.05)",
                     }}
                 />
@@ -72,7 +72,7 @@ export function Navbar() {
                             <a
                                 key={link.label}
                                 href={link.href}
-                                className="text-[13px] font-semibold uppercase tracking-[0.2em] text-[#E2D6C7] hover:text-[#CBA785] transition-all duration-300"
+                                className="text-[13px] font-montserrat font-medium uppercase tracking-[0.1em] text-[#E9E1D4] hover:text-[#C9B99B] transition-all duration-300"
                             >
                                 {link.label}
                             </a>
@@ -84,7 +84,7 @@ export function Navbar() {
                                 href={whatsappLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-5 py-2.5 border border-[#7A858E] text-[#CBA785] text-[12px] font-bold uppercase tracking-wider rounded-[4px] hover:bg-[#CBA785] hover:text-black transition-all duration-300"
+                                className="px-5 py-2.5 border border-[#7A858E] text-[#C9B99B] text-[12px] font-montserrat font-medium uppercase tracking-[0.1em] rounded-[4px] hover:bg-[#C9B99B] hover:text-[#111820] transition-all duration-300"
                             >
                                 Contact
                             </a>
@@ -92,7 +92,7 @@ export function Navbar() {
                             {/* Main Tickets Button */}
                             <a
                                 href="#tickets"
-                                className="px-6 py-3 bg-[#D99C78] text-[#22282C] text-[13px] font-black uppercase tracking-[0.1em] rounded-[4px] shadow-lg hover:bg-[#E7B597] transition-all duration-300 active:scale-95"
+                                className="px-6 py-3 bg-[#E9E1D4] text-[#111820] text-[13px] font-montserrat font-medium uppercase tracking-[0.1em] rounded-[4px] shadow-lg hover:bg-[#F9F7F2] transition-all duration-300 active:scale-95"
                             >
                                 Get Tickets
                             </a>
@@ -101,7 +101,7 @@ export function Navbar() {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="lg:hidden text-white p-2"
+                        className="lg:hidden text-[#F9F7F2] p-2"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ export function Navbar() {
                                 key={link.label}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-white/80 text-lg font-light uppercase tracking-[0.2em] border-b border-white/5 pb-2"
+                                className="text-[#F9F7F2]/80 text-lg font-montserrat font-medium uppercase tracking-[0.1em] border-b border-white/5 pb-2"
                             >
                                 {link.label}
                             </a>
@@ -135,14 +135,14 @@ export function Navbar() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="w-full py-4 border border-[#7A858E] text-[#CBA785] text-center font-bold uppercase tracking-widest rounded-sm"
+                                className="w-full py-4 border border-[#7A858E] text-[#C9B99B] text-center font-montserrat font-medium uppercase tracking-[0.1em] rounded-sm"
                             >
                                 Contact WhatsApp
                             </a>
                             <a
                                 href="#tickets"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="w-full py-4 bg-[#D99C78] text-[#22282C] text-center font-black uppercase tracking-widest rounded-sm"
+                                className="w-full py-4 bg-[#E9E1D4] text-[#111820] text-center font-montserrat font-medium uppercase tracking-[0.1em] rounded-sm"
                             >
                                 Get Tickets
                             </a>
@@ -154,7 +154,7 @@ export function Navbar() {
             <div
                 className={`pointer-events-none absolute inset-x-0 top-full h-10 transition-opacity duration-700 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}
                 style={{
-                    background: "linear-gradient(to bottom, rgba(217,179,95,0.20), rgba(0,0,0,0))",
+                    background: "linear-gradient(to bottom, rgba(201,185,155,0.20), rgba(0,0,0,0))",
                 }}
             />
         </header>

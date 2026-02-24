@@ -52,7 +52,7 @@ export default function HeroCTA({
                     "cursor-pointer overflow-hidden",
                     "h-16 md:h-20 px-12 md:px-16",
                     "rounded-[22px]",
-                    "font-extrabold uppercase tracking-tighter text-lg md:text-xl",
+                    "font-bebas font-normal uppercase tracking-widest text-xl md:text-2xl pt-1",
                     "text-[#22282C] whitespace-nowrap",
                     "transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]",
                     "hover:-translate-y-1 hover:scale-[1.015]",
@@ -138,7 +138,7 @@ export default function HeroCTA({
 
             {subtext && (
                 <div className="relative mt-2">
-                    <span className="text-xs md:text-sm text-[#E4EDF8] font-black uppercase tracking-[0.2em] drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                    <span className="text-xs md:text-sm text-[#F9F7F2] font-montserrat font-medium uppercase tracking-[0.1em] drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
                         {subtext}
                     </span>
                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-[#BCCADD]/65" />

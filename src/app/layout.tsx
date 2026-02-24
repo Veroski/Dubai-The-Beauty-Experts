@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Lexend_Giga } from "next/font/google";
+import { Montserrat, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -8,10 +8,10 @@ const montserrat = Montserrat({
   weight: ["300", "400", "500", "700", "900"],
 });
 
-const lexendGiga = Lexend_Giga({
+const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
-  variable: "--font-lexend",
-  weight: ["400", "700", "900"],
+  variable: "--font-bebas",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -53,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${lexendGiga.variable} font-sans antialiased selection:bg-goldenBeige/30`}>
+      <body className={`${montserrat.variable} ${bebasNeue.variable} font-sans antialiased selection:bg-goldenBeige/30`}>
         {children}
       </body>
     </html>
