@@ -35,7 +35,7 @@ export function ProgramArchitectureSection() {
             ref={sectionRef}
             className="relative scroll-mt-28 md:scroll-mt-32 overflow-hidden py-24 md:py-40 w-full"
             style={{
-                background: "linear-gradient(180deg, #E6D4B5 0%, #DDC4A1 46%, #DDC4A1 100%)"
+                background: "linear-gradient(180deg, #F9F7F2 0%, #E9E1D4 46%, #E9E1D4 100%)"
             }}
         >
             {/* Fondo decorativo y Textura Desértica */}
@@ -46,8 +46,8 @@ export function ProgramArchitectureSection() {
                     className="w-full h-full object-cover opacity-60 mix-blend-multiply [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
                 />
                 {/* Iluminación tipo sol del desierto */}
-                <div className="absolute inset-0 bg-[radial-gradient(1200px_circle_at_15%_10%,rgba(240,220,185,0.4),transparent_60%),radial-gradient(1200px_circle_at_85%_90%,rgba(184,134,69,0.15),transparent_60%)]" />
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(230,212,181,0.2),rgba(221,196,161,0.4))]" />
+                <div className="absolute inset-0 bg-[radial-gradient(1200px_circle_at_15%_10%,rgba(249,247,242,0.4),transparent_60%),radial-gradient(1200px_circle_at_85%_90%,rgba(201,185,155,0.15),transparent_60%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(249,247,242,0.2),rgba(233,225,212,0.4))]" />
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
@@ -57,17 +57,17 @@ export function ProgramArchitectureSection() {
                     <div className="flex flex-col">
                         <header className="mb-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <span className="w-8 h-[2px] bg-[#B88645]"></span>
-                                <div className="text-[12px] tracking-[0.4em] uppercase font-black text-[#1C1714]">
+                                <span className="w-8 h-[2px] bg-[#C9B99B]"></span>
+                                <div className="text-[12px] tracking-[0.4em] uppercase font-black text-[#111820]">
                                     EVENT STRUCTURE
                                 </div>
                             </div>
 
-                            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bebas font-normal leading-[0.9] tracking-widest text-[#1C1714] mb-8 uppercase">
+                            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bebas font-normal leading-[0.9] tracking-widest text-[#111820] mb-8 uppercase">
                                 THREE DAYS OF ELITE <br />
                                 <span
                                     className="text-transparent"
-                                    style={{ WebkitTextStroke: "1.5px #1C1714" }}
+                                    style={{ WebkitTextStroke: "1.5px #111820" }}
                                 >
                                     CONGRESS & CHAMPIONSHIP IN DUBAI
                                 </span>
@@ -130,17 +130,17 @@ export function ProgramArchitectureSection() {
                                 href={googleMapsUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="absolute -top-6 -right-4 md:-top-8 md:-right-6 lg:-right-10 z-20 bg-[#1C1714] text-[#E6D4B5] border border-[#B88645]/40 px-5 py-3 rounded-sm shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 active:scale-95 cursor-pointer flex flex-col items-start hover:shadow-[#B88645]/20"
+                                className="absolute -top-6 -right-4 md:-top-8 md:-right-6 lg:-right-10 z-20 bg-[#111820] text-[#F9F7F2] border border-[#C9B99B]/40 px-5 py-3 rounded-sm shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 active:scale-95 cursor-pointer flex flex-col items-start hover:shadow-[#C9B99B]/20"
                             >
-                                <p className="text-[9px] font-black tracking-widest uppercase mb-1 opacity-90 text-[#B88645]">Location</p>
+                                <p className="text-[9px] font-black tracking-widest uppercase mb-1 opacity-90 text-[#C9B99B]">Location</p>
                                 <p className="text-[11px] font-bebas font-normal tracking-widest uppercase italic whitespace-nowrap">Arjaan by Rotana</p>
                             </a>
 
-                            <div className="absolute inset-10 bg-[#B88645] blur-[80px] translate-y-20 opacity-30 group-hover:opacity-50 transition-opacity duration-700" />
+                            <div className="absolute inset-10 bg-[#C9B99B] blur-[80px] translate-y-20 opacity-30 group-hover:opacity-50 transition-opacity duration-700" />
 
                             {/* Contenedor del panel con fondo desértico premium y bordes */}
                             <div
-                                className="relative overflow-hidden rounded-xl bg-[#2A1E12] border border-[#B88645]/40 shadow-[0_20px_50px_rgba(28,23,20,0.6)] p-4 md:p-6 lg:p-8 group/card"
+                                className="relative overflow-hidden rounded-xl bg-[#141C24] border border-[#C9B99B]/40 shadow-[0_20px_50px_rgba(17,24,32,0.6)] p-4 md:p-6 lg:p-8 group/card"
                                 style={{
                                     backgroundImage: `url('/texture.png')`,
                                     backgroundBlendMode: 'overlay',
@@ -149,7 +149,7 @@ export function ProgramArchitectureSection() {
                                 }}
                             >
                                 {/* Overlay adicional para oscurecer/uniformizar la textura desértica del fondo y mantener alto contraste */}
-                                <div className="absolute inset-0 bg-[#2A1E12]/80 pointer-events-none" />
+                                <div className="absolute inset-0 bg-[#141C24]/80 pointer-events-none" />
 
                                 <img
                                     src="/structure.png"
@@ -175,11 +175,11 @@ export function ProgramArchitectureSection() {
 
 function ContextBlock({ day, title, description }) {
     return (
-        <article className="group relative p-8 rounded-sm bg-white/30 backdrop-blur-sm border-l-2 border-[#1C1714]/10 hover:border-[#B88645] transition-all duration-500 shadow-[0_4px_20px_-10px_rgba(28,23,20,0.05)] hover:shadow-[0_10px_30px_-10px_rgba(184,134,69,0.15)] hover:-translate-y-1">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-gradient-to-r from-[#B88645]/5 to-transparent" />
-            <p className="text-[10px] tracking-[0.3em] uppercase font-bold text-[#B88645] mb-2">{day}</p>
-            <h3 className="text-2xl font-bebas font-normal tracking-widest text-[#1C1714] group-hover:text-[#1C1714] transition-colors mb-3 uppercase italic leading-tight">{title}</h3>
-            <p className="text-[10px] md:text-xs leading-relaxed text-[#4A3B32] group-hover:text-[#1C1714] font-montserrat font-medium uppercase tracking-[0.1em] transition-colors max-w-sm">{description}</p>
+        <article className="group relative p-8 rounded-sm bg-white/30 backdrop-blur-sm border-l-2 border-[#111820]/10 hover:border-[#C9B99B] transition-all duration-500 shadow-[0_4px_20px_-10px_rgba(17,24,32,0.05)] hover:shadow-[0_10px_30px_-10px_rgba(201,185,155,0.15)] hover:-translate-y-1">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-gradient-to-r from-[#C9B99B]/5 to-transparent" />
+            <p className="text-[10px] tracking-[0.3em] uppercase font-bold text-[#C9B99B] mb-2">{day}</p>
+            <h3 className="text-2xl font-bebas font-normal tracking-widest text-[#111820] group-hover:text-[#111820] transition-colors mb-3 uppercase italic leading-tight">{title}</h3>
+            <p className="text-[10px] md:text-xs leading-relaxed text-[#5E7385] group-hover:text-[#111820] font-montserrat font-medium uppercase tracking-[0.1em] transition-colors max-w-sm">{description}</p>
         </article>
     );
 }

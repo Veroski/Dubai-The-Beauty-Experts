@@ -50,14 +50,15 @@ export default function HeroCTA({
                 className={[
                     "relative inline-flex items-center justify-center",
                     "cursor-pointer overflow-hidden",
-                    "h-16 md:h-20 px-12 md:px-16",
+                    "h-14 md:h-20 px-8 md:px-16",
                     "rounded-[22px]",
-                    "font-bebas font-normal uppercase tracking-widest text-xl md:text-2xl pt-1",
-                    "text-[#22282C] whitespace-nowrap",
+                    "font-bebas font-normal uppercase tracking-widest text-lg md:text-2xl pt-1",
+                    "text-[#22282C] whitespace-nowrap lg:whitespace-normal text-center leading-tight",
                     "transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]",
                     "hover:-translate-y-1 hover:scale-[1.015]",
                     "active:scale-[0.97]",
                     "focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50",
+                    "max-w-full"
                 ].join(" ")}
                 style={{
                     background: `
@@ -116,11 +117,13 @@ export default function HeroCTA({
                 </div>
 
                 {/* Contenido */}
-                <span className="relative z-20 flex items-center gap-4 drop-shadow-sm">
-                    {label}
-                    <span className="relative flex items-center justify-center w-6 h-6">
+                <span className="relative z-20 flex items-center gap-2 md:gap-4 drop-shadow-sm min-w-0">
+                    <span className="truncate md:overflow-visible break-words whitespace-normal px-2">
+                        {label}
+                    </span>
+                    <span className="relative flex items-center justify-center w-5 h-5 md:w-6 md:h-6 shrink-0">
                         <svg
-                            className="w-6 h-6 transition-all duration-500 group-hover:translate-x-1.5"
+                            className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:translate-x-1.5"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
