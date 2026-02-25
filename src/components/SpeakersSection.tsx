@@ -18,7 +18,7 @@ const SPEAKER_DATA: Speaker[] = [
     { id: "prime-5", name: "LJUDMILA VALJEVAC", image: "/artistas-dubai/PRIME-SPEAKERS/LJUDMILA VALJEVAC.webp", group: "prime" },
     { id: "prime-6", name: "MARIA GARCIA", image: "/artistas-dubai/PRIME-SPEAKERS/MARIA GARCIA.webp", group: "prime" },
     { id: "prime-7", name: "OSCAR ARANGO", image: "/artistas-dubai/PRIME-SPEAKERS/OSCAR  ARANGO.webp", group: "prime" },
-    { id: "prime-8", name: "OSCAR CABALLERO", image: "/artistas-dubai/PRIME-SPEAKERS/OSCAR CABALLERO.webp", group: "prime" },
+    { id: "prime-8", name: "OSCAR CARBALLO", image: "/artistas-dubai/PRIME-SPEAKERS/OSCAR CABALLERO.webp", group: "prime" },
     { id: "prime-9", name: "RAFA SANZ", image: "/artistas-dubai/PRIME-SPEAKERS/RAFA SANZ.webp", group: "prime" },
 
     { id: "nonstop-1", name: "ALESSANDRA LA CORTE", image: "/artistas-dubai/JUDGE-DEMO-SPEAKER/ALESSANDRA LA CORTE.webp", group: "nonstop" },
