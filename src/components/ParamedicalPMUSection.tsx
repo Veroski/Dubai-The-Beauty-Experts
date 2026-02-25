@@ -132,43 +132,6 @@ export function ParamedicalPMUSection() {
                     </div>
                 </div>
 
-                {/* FOOTER: Investment (Blue & Gold Bar) */}
-                <div className="mt-10 bg-gradient-to-r from-[#1B2A36] via-[#C9B99B]/30 to-[#1B2A36] p-[1px] rounded-lg shadow-[0_10px_30px_-5px_rgba(0,0,0,0.5)]">
-                    <div className="bg-[#141C24] rounded-lg p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
-                        {/* Subtle noise overlay in footer */}
-                        <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iMC41IiByZXN1bHQ9ImIiLz48ZmVDb2xvck1hdHJpeCBpbj0iYiIgdHlwZT0ibWF0cml4IiB2YWxHVZz0iMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIiByZXN1bHQ9ImMiLz48L2ZpbHRlcj48cmVjdCB3aWRHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZmZmIiBmaWx0ZXI9InVybCgjbnUpIiBvcGFjaXR5PSIwLjI1Ii8+PC9zdmc+')]" />
-
-                        <div className="text-center lg:text-left relative z-10">
-                            <p className="text-[#C9B99B] uppercase tracking-[0.2em] text-[10px] font-montserrat font-medium mb-2">
-                                ACCESS GRANT
-                            </p>
-                            <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                                <span className="font-bebas text-5xl text-[#F9F7F2]">€1,500</span>
-                                <span className="font-montserrat text-[#F9F7F2]/50 text-xs uppercase">+ VAT</span>
-                            </div>
-                        </div>
-
-                        <div className="hidden lg:block h-12 w-px bg-[#5E7385]/30" />
-
-                        <div className="max-w-xl text-center lg:text-left relative z-10">
-                            <p className="text-[#F9F7F2]/80 text-[10px] md:text-xs tracking-widest uppercase font-medium font-montserrat leading-relaxed">
-                                INCLUDES EXCLUSIVE CLINICAL LOUNGE ACCESS, RECOGNITION PLAQUE, AND FULL CONGRESS ENTRY.
-                            </p>
-                        </div>
-
-                        <div className="relative z-10">
-                            <a
-                                href="https://link.fastpaydirect.com/payment-link/699e2d87e0aef97d62a161c6"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block px-8 py-4 bg-[#C9B99B] hover:bg-[#F9F7F2] text-[#141C24] font-montserrat font-medium uppercase tracking-[0.2em] text-[10px] md:text-xs transition-colors duration-300"
-                            >
-                                SECURE ACCESS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
     );
